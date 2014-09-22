@@ -1,0 +1,17 @@
+{
+	"name": "Selfoff",
+	"version": "0.1.0",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"jquery": "*",
+		"modernizr": "*",
+		"components-font-awesome": "*",
+		"bootstrap": "~3.0.0"
+	}
+}

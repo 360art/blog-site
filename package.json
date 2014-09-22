@@ -1,0 +1,22 @@
+{
+	"name": "Selfoff",
+	"version": "0.1.0",
+	"homepage": "http://www.selfoff.pl",
+	"description": "Selfoff",
+	"author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com>",
+	"link": "http://jedrzejchalubek.com",
+	"private": true,
+	"devDependencies": {
+		"grunt": "~0.4.2",
+        "grunt-phplint": "*",
+		"grunt-contrib-less": "*",
+		"grunt-contrib-uglify": "*",
+		"grunt-contrib-concat": "*",
+		"grunt-contrib-imagemin": "*",
+		"grunt-contrib-copy": "*",
+		"grunt-file-creator": "*",
+		"grunt-contrib-watch": "*",
+		"matchdep": "*"
+	},
+	"main": "Gruntfile.js"
+}
