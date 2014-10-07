@@ -7653,26 +7653,26 @@ td.visible-print {
  | ---------------------------------------------------
  | Import theme modules
 */
-nav {
+.nav {
   padding-top: 150px;
 }
-nav .nav__logo img {
+.nav__logo img {
   width: 300px;
 }
-nav .nav__menu {
+.nav__menu {
   list-style: none;
   padding-left: 0;
   margin-top: 150px;
   margin-bottom: 80px;
 }
-nav .nav__menu .nav__item {
+.nav__item {
   display: inline;
   margin-left: 30px;
   margin-right: 30px;
   font-size: 24px;
   text-transform: uppercase;
 }
-nav .nav__menu .nav__item a {
+.nav__item a {
   text-decoration: none;
 }
 
