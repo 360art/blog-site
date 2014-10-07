@@ -7,11 +7,14 @@
 		{{ wp_head }}
 	</head>
 	<body id="body">
+		<div class="container-fluid">
+		{% include 'modules/navigation.twig' %}
 
 		{% block header %}{% endblock %}
 		{% block content %}{% endblock %}
 		{% block footer %}{% endblock %}
 
+		</div>
 		{{ wp_footer }}
 
 	</body>

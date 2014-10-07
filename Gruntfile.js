@@ -29,6 +29,7 @@ module.exports = function(grunt){
 			options: {
 				paths: [
 					"<%= paths.bower %>/bootstrap/less",
+					"<%= paths.bower %>/components-font-awesome/less",
 				]
 			},
 			normal: {
