@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Vesper+Libre&subset=latin,latin-ext);
 /*
  | ---------------------------------------------------
  | Bootstrap
@@ -411,11 +412,11 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 23px;
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 14px;
 }
 h4,
 .h4 {
@@ -7670,6 +7671,7 @@ td.visible-print {
   margin-left: 30px;
   margin-right: 30px;
   font-size: 24px;
+  font-weight: 300;
   text-transform: uppercase;
 }
 .nav__item a {
@@ -7684,6 +7686,7 @@ td.visible-print {
 }
 .filtr h2 {
   font-variant: small-caps;
+  font-size: 30px;
 }
 .filtr__slider-wrap {
   display: table;
@@ -7713,6 +7716,65 @@ td.visible-print {
 .filtr .slick-slide {
   padding-top: 65px;
   padding-bottom: 65px;
+}
+.news h1,
+.news h2,
+.news h3 {
+  margin: 0;
+}
+.news__heading {
+  color: #5f5f5f;
+  padding-top: 36px;
+  padding-bottom: 24px;
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 2px solid #5f5f5f;
+  margin-bottom: 24px;
+}
+.news__img {
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+.news__title {
+  color: #bd3636;
+  font-weight: 700;
+  padding-bottom: 12px;
+  margin: 0;
+}
+.news__author-date {
+  color: #aaaaaa;
+  padding-bottom: 24px;
+  margin: 0;
+}
+.news__post {
+  color: #5f5f5f;
+  padding-bottom: 24px;
+  font-family: 'Vesper Libre', serif;
+  font-size: 16px;
+}
+.news__more-wrap {
+  width: 100%;
+  text-align: right;
+}
+.news__more {
+  color: #bd3636;
+  font-family: 'Vesper Libre', serif;
+  font-size: 18px;
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  border: 1px solid #bd3636;
+  margin-bottom: 36px;
+  font-variant: small-caps;
+  line-height: 2.35;
+  text-align: center;
+}
+.news__more:hover {
+  color: #fff;
+  background-color: #bd3636;
+  text-decoration: none;
 }
 /*
  | ---------------------------------------------------
