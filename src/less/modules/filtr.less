@@ -1,0 +1,41 @@
+.filtr {
+	color: #fff;
+	min-height: 650px;
+	background-image: url('../images/filtr.jpg');
+	background-size: cover;
+	position: relative;
+	h2 {
+		font-variant: small-caps;
+	}
+	&__slider-wrap {
+		display: table;
+		min-height: 650px;
+	}
+	&__slider {
+		display: table-cell !important;
+		vertical-align: middle;
+		font-size: 24px;
+		text-align: center;
+	}
+	&__arrow {
+		position: absolute;
+		color: white;
+		z-index: 10;
+	}
+
+	@arrow-offset: 250px;
+	&__arrow-up {
+		left: 50%;
+		top: @arrow-offset;
+		margin-left: -20px;
+	}
+	&__arrow-down {
+		left: 50%;
+		bottom: @arrow-offset;
+		margin-left: -20px;
+	}
+	.slick-slide {
+		padding-top: 65px;
+		padding-bottom: 65px;
+	}
+}
