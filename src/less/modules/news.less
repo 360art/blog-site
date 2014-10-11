@@ -2,17 +2,6 @@
 	h1,h2,h3 {
 		margin: 0;
 	}
-	&__heading {
-		color: #5f5f5f;
-		padding-top: 36px;
-		padding-bottom: 24px;
-		margin: 0;
-		letter-spacing: 2px;
-		font-weight: 300;
-		text-transform: uppercase;
-		border-bottom: 2px solid #5f5f5f;
-		margin-bottom: 24px;
-	}
 	&__img {
 		margin: 0 auto;
 		padding-bottom: 24px;
@@ -28,17 +17,16 @@
 		padding-bottom: 24px;
 		margin: 0;
 	}
-	&__post {
-		color: #5f5f5f;
-		padding-bottom: 24px;
-		font-family: 'Vesper Libre', serif;
-		font-size: 16px;
-	}
 	&__more-wrap {
 		width: 100%;
 		text-align: right;
 	}
 	&__more {
+		&:hover {
+			color: #fff;
+			background-color: #bd3636;
+			text-decoration: none;
+		}
 		color: #bd3636;
 		font-family: 'Vesper Libre', serif;
 		font-size: 18px;
@@ -50,10 +38,5 @@
 		font-variant: small-caps;
 		line-height: 2.35;
 		text-align: center;
-	}
-	&__more:hover {
-		color: #fff;
-		background-color: #bd3636;
-		text-decoration: none;
 	}
 }

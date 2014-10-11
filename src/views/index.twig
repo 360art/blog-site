@@ -1,102 +1,19 @@
 {% extends 'templates/layout.twig' %}
 
 {% block filtr %}
-<div class="filtr">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-2">
-				<h2>Filtr urojeń</h2>
-			</div>
-			<div class="col-md-offset-1 col-md-8">
-				<div class="filtr__slider-wrap">
-					<div class="filtr__arrow filtr__arrow-down fa fa-angle-down"></div>
-					<div class="filtr__arrow filtr__arrow-up fa fa-angle-down"></div>
-					<div class="filtr__slider">
-						<div>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloremque quidem ullam enim, similique, delectus 
-							<div class="filtr__more">
-								aut earum hic nulla architecto sint ipsa veritatis excepturi sapiente aliquid expedita nisi recusandae! Atque.
-							</div>
-						</div>
-						<div>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloremque quidem ullam enim, similique, delectus 
-							<div class="filtr__more">
-								aut earum hic nulla architecto sint ipsa veritatis excepturi sapiente aliquid expedita nisi recusandae! Atque.
-							</div>
-						</div>
-						<div>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloremque quidem ullam enim, similique, delectus 
-							<div class="filtr__more">
-								aut earum hic nulla architecto sint ipsa veritatis excepturi sapiente aliquid expedita nisi recusandae! Atque.
-							</div>
-						</div>
-						<div>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloremque quidem ullam enim, similique, delectus 
-							<div class="filtr__more">
-								aut earum hic nulla architecto sint ipsa veritatis excepturi sapiente aliquid expedita nisi recusandae! Atque.
-							</div>
-						</div>
-						<div>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloremque quidem ullam enim, similique, delectus 
-							<div class="filtr__more">
-								aut earum hic nulla architecto sint ipsa veritatis excepturi sapiente aliquid expedita nisi recusandae! Atque.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+	{% include 'modules/filtr.twig' %}
 {% endblock %}
 
 {% block news %}
-<div class="news">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8">
-				<div class="news__heading">
-					<h1>Aktualności</h1>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<img src="http://lorempixel.com/300/200" class="news__img img-responsive" alt="Lorem">
-				<h2 class="news__title">Umysł w naturze</h2>
-				<h3 class="news__author-date">Jan Kowalski 2 kwietnia 2014</h3>
-				<p class="news__post">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nihil est velit voluptatum placeat voluptas quaerat saepe dolore, quis voluptates eaque nemo dolorum cumque ullam expedita explicabo architecto hic iste sapiente minima ea. Reiciendis enim, deserunt mollitia suscipit molestiae in. Quae vero, aut quidem amet repellendus dolorum voluptatum corporis corrupti reprehenderit neque fuga, sequi architecto blanditiis recusandae maiores. Libero labore ipsam autem quisquam vel voluptas excepturi ea, a nihil accusamus sunt minus, odio sit culpa facere tempora nesciunt sapiente eligendi. Ex provident et ratione eaque, modi quam dolor similique quaerat itaque atque sunt est ab voluptate neque inventore, exercitationem in.
-				</p>
-				<div class="news__more-wrap">
-					<a class="news__more" href="#">Czytaj Dalej</a>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<img src="http://lorempixel.com/300/200" class="news__img img-responsive" alt="Lorem">
-				<h2 class="news__title">Umysł w naturze</h2>
-				<h3 class="news__author-date">Jan Kowalski 2 kwietnia 2014</h3>
-				<p class="news__post">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nihil est velit voluptatum placeat voluptas quaerat saepe dolore, quis voluptates eaque nemo dolorum cumque ullam expedita explicabo architecto hic iste sapiente minima ea. Reiciendis enim, deserunt mollitia suscipit molestiae in. Quae vero, aut quidem amet repellendus dolorum voluptatum corporis corrupti reprehenderit neque fuga, sequi architecto blanditiis recusandae maiores. Libero labore ipsam autem quisquam vel voluptas excepturi ea, a nihil accusamus sunt minus, odio sit culpa facere tempora nesciunt sapiente eligendi. Ex provident et ratione eaque, modi quam dolor similique quaerat itaque atque sunt est ab voluptate neque inventore, exercitationem in.
-				</p>
-				<div class="news__more-wrap">
-					<a class="news__more" href="#">Czytaj Dalej</a>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<img src="http://lorempixel.com/300/200" class="news__img img-responsive" alt="Lorem">
-				<h2 class="news__title">Umysł w naturze</h2>
-				<h3 class="news__author-date">Jan Kowalski 2 kwietnia 2014</h3>
-				<p class="news__post">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nihil est velit voluptatum placeat voluptas quaerat saepe dolore, quis voluptates eaque nemo dolorum cumque ullam expedita explicabo architecto hic iste sapiente minima ea. Reiciendis enim, deserunt mollitia suscipit molestiae in. Quae vero, aut quidem amet repellendus dolorum voluptatum corporis corrupti reprehenderit neque fuga, sequi architecto blanditiis recusandae maiores. Libero labore ipsam autem quisquam vel voluptas excepturi ea, a nihil accusamus sunt minus, odio sit culpa facere tempora nesciunt sapiente eligendi. Ex provident et ratione eaque, modi quam dolor similique quaerat itaque atque sunt est ab voluptate neque inventore, exercitationem in.
-				</p>
-				<div class="news__more-wrap">
-					<a class="news__more" href="#">Czytaj Dalej</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+	{% include 'modules/news.twig' %}
+{% endblock %}
+
+{% block about %}
+	{% include 'modules/about.twig' %}
+{% endblock %}
+
+{% block program %}
+	{% include 'modules/program.twig' %}
 {% endblock %}
 
 {% block footer %}

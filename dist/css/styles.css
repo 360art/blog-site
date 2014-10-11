@@ -7654,6 +7654,44 @@ td.visible-print {
  | ---------------------------------------------------
  | Import theme modules
 */
+.util__headline-1 {
+  font-family: 'Alegreya Sans', sans-serif;
+  padding-top: 36px;
+  padding-bottom: 24px;
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.util__headline-2 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 24px;
+  padding-bottom: 36px;
+  margin: 0;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  font-weight: 500;
+}
+.util__headline-white {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.util__headline-black {
+  color: #5f5f5f;
+  border-bottom: 2px solid #5f5f5f;
+}
+.util__paragraph {
+  padding-bottom: 24px;
+  font-family: 'Vesper Libre', serif;
+  font-size: 16px;
+}
+.util__text-black {
+  color: #5f5f5f;
+}
+.util__text-white {
+  color: #fff;
+}
 .nav {
   padding-top: 150px;
 }
@@ -7684,13 +7722,18 @@ td.visible-print {
   background-size: cover;
   position: relative;
 }
-.filtr h2 {
+.filtr__headline {
+  position: absolute;
+  top: 0;
+  left: 0;
   font-variant: small-caps;
   font-size: 30px;
 }
 .filtr__slider-wrap {
   display: table;
   min-height: 650px;
+  width: 65%;
+  margin: 0 auto;
 }
 .filtr__slider {
   display: table-cell !important;
@@ -7702,6 +7745,7 @@ td.visible-print {
   position: absolute;
   color: white;
   z-index: 10;
+  font-size: 45px;
 }
 .filtr__arrow-up {
   left: 50%;
@@ -7722,17 +7766,6 @@ td.visible-print {
 .news h3 {
   margin: 0;
 }
-.news__heading {
-  color: #5f5f5f;
-  padding-top: 36px;
-  padding-bottom: 24px;
-  margin: 0;
-  letter-spacing: 2px;
-  font-weight: 300;
-  text-transform: uppercase;
-  border-bottom: 2px solid #5f5f5f;
-  margin-bottom: 24px;
-}
 .news__img {
   margin: 0 auto;
   padding-bottom: 24px;
@@ -7747,12 +7780,6 @@ td.visible-print {
   color: #aaaaaa;
   padding-bottom: 24px;
   margin: 0;
-}
-.news__post {
-  color: #5f5f5f;
-  padding-bottom: 24px;
-  font-family: 'Vesper Libre', serif;
-  font-size: 16px;
 }
 .news__more-wrap {
   width: 100%;
@@ -7775,6 +7802,79 @@ td.visible-print {
   color: #fff;
   background-color: #bd3636;
   text-decoration: none;
+}
+.about {
+  background-color: #5d6d6c;
+}
+.about__photo-caption {
+  width: 100%;
+  text-align: center;
+}
+.about__border-left {
+  border-left: 2px solid white;
+}
+.about__photo-name {
+  margin: 0;
+  padding-top: 20px;
+  font-family: 'Vesper Libre', serif;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.about__photo-desc {
+  margin: 0;
+  color: #c2c2c2;
+  font-variant: small-caps;
+  font-size: 14px;
+  letter-spacing: 1pt;
+}
+.program {
+  background-image: url('../images/program_tlo.jpg');
+  background-size: cover;
+  padding-bottom: 35px;
+}
+.program__section-headline-2 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 30px;
+  letter-spacing: 3pt;
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.program__section-headline-3 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 24px;
+  letter-spacing: 1pt;
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+.program__section-headline-4 {
+  font-family: 'Vesper Libre', serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #bd3636;
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 38px;
+}
+.program__list {
+  font-family: 'Vesper Libre', serif;
+  font-size: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.program__list li {
+  margin-bottom: 10px;
+}
+.program__list li:nth-child(even) {
+  margin-left: 40px;
 }
 /*
  | ---------------------------------------------------

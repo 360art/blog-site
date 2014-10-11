@@ -1,16 +1,22 @@
 .filtr {
+	@arrow-offset: 250px;
 	color: #fff;
 	min-height: 650px;
 	background-image: url('../images/filtr.jpg');
 	background-size: cover;
 	position: relative;
-	h2 {
+	&__headline {
+		position: absolute;
+		top:0;
+		left: 0;
 		font-variant: small-caps;
 		font-size: 30px;
 	}
 	&__slider-wrap {
 		display: table;
 		min-height: 650px;
+		width: 65%;
+		margin: 0 auto;
 	}
 	&__slider {
 		display: table-cell !important;
@@ -22,9 +28,8 @@
 		position: absolute;
 		color: white;
 		z-index: 10;
+		font-size: 45px;
 	}
-
-	@arrow-offset: 250px;
 	&__arrow-up {
 		left: 50%;
 		top: @arrow-offset;
