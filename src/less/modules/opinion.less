@@ -1,0 +1,40 @@
+.opinion {
+	background-color: #f5f3f3;
+
+	&__paragraph {
+		font-size: 18px;
+		padding-bottom: 24px;
+		corlo: #3c3c3c;
+		&:before {
+			content: "\201C";
+		}
+		&:after {
+			content: "\201D";
+		}
+	}
+	&__name {
+		font-size: 18px;
+		margin-bottom: 12px;
+		text-transform: capitalize;
+		text-align: right;
+		color: #bd3636;
+	}
+	&__role {
+		font-family: @font-family-sans-serif;
+		font-size: 18px;
+		margin-bottom: 36px;
+		text-align: right;
+	}
+	.slick-dots 
+	{
+		bottom: 45px;
+		li button:before {
+			width: 20px;
+			height: 20px;
+			font-size: 13px;
+		}
+		li.slick-active button:before{
+			color: #be3838;
+		}
+	}
+}

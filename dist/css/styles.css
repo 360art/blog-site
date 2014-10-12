@@ -7907,6 +7907,44 @@ td.visible-print {
   color: #fff;
   text-decoration: none;
 }
+.opinion {
+  background-color: #f5f3f3;
+}
+.opinion__paragraph {
+  font-size: 18px;
+  padding-bottom: 24px;
+  corlo: #3c3c3c;
+}
+.opinion__paragraph:before {
+  content: "\201C";
+}
+.opinion__paragraph:after {
+  content: "\201D";
+}
+.opinion__name {
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  text-align: right;
+  color: #bd3636;
+}
+.opinion__role {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  margin-bottom: 36px;
+  text-align: right;
+}
+.opinion .slick-dots {
+  bottom: 45px;
+}
+.opinion .slick-dots li button:before {
+  width: 20px;
+  height: 20px;
+  font-size: 13px;
+}
+.opinion .slick-dots li.slick-active button:before {
+  color: #be3838;
+}
 /*
  | ---------------------------------------------------
  | Plugins css

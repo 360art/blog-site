@@ -1942,7 +1942,7 @@
 }));
 ;;(function() {
 
-	//Filtr urojen
+	//Filtr urojen slider
 	var filtr_slider = $('.filtr__slider').slick({
 		vertical: true,
 		centerMode: true,
@@ -1957,10 +1957,6 @@
 		filtr_set.eq(1)	.css('color','#fff').fadeIn();
 	}
 
-	//Hide more section
-	//$('.filtr__more').hide();
-	//Problemy z ponownym wyliczeniem slidera
-
 	//Dim
 	dimText($('.slick-active'));
 
@@ -1973,4 +1969,12 @@
 		filtr_slider.slickNext();
 		dimText($('.slick-active'));
 	});
+	//EOF Filtr urojen slider
+
+	//Opinie slider
+	$('.opinion__slider').slick({
+		dots: true,
+	  	arrows: false
+  	});
+	//EOF Opinie slider
 })();
