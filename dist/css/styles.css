@@ -7923,7 +7923,7 @@ td.visible-print {
 }
 .opinion__name {
   font-size: 18px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   text-transform: capitalize;
   text-align: right;
   color: #bd3636;
@@ -7944,6 +7944,21 @@ td.visible-print {
 }
 .opinion .slick-dots li.slick-active button:before {
   color: #be3838;
+}
+.footer {
+  background-color: #264242;
+  padding-bottom: 60px;
+}
+.footer__contact img {
+  margin-right: 30px;
+}
+.footer__item {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 30px;
+}
+.footer__item:hover {
+  text-decoration: none;
+  color: #fff;
 }
 /*
  | ---------------------------------------------------
@@ -7978,7 +7993,7 @@ td.visible-print {
   outline: none;
 }
 .slick-loading .slick-list {
-  background: #ffffff url("ajax-loader.gif") center center no-repeat;
+  background: #ffffff url("../images/ajax-loader.gif") center center no-repeat;
 }
 .slick-list.dragging {
   cursor: pointer;
