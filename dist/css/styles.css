@@ -7715,6 +7715,11 @@ td.visible-print {
 .nav__item a {
   text-decoration: none;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav__item {
+    font-size: 18px;
+  }
+}
 .filtr {
   color: #fff;
   min-height: 650px;
@@ -7849,6 +7854,14 @@ td.visible-print {
   position: absolute;
   top: 51.3%;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .program__divider {
+    top: 50%;
+  }
+  .program__divider img {
+    width: 92%;
+  }
+}
 .program__section-headline-3 {
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 24px;
@@ -7957,7 +7970,10 @@ td.visible-print {
 }
 .footer {
   background-color: #264242;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
+}
+.footer__contact {
+  margin-top: 20px;
 }
 .footer__contact img {
   margin-right: 30px;

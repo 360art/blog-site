@@ -18,6 +18,13 @@
 	&__divider {
 		position: absolute;
 		top: 51.3%;
+		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { 
+			top: 50%;
+
+			img {
+				width: 92%;
+			}
+		}
 	}
 
 	&__section-headline-3 {
