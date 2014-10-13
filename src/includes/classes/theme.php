@@ -100,6 +100,21 @@ class Theme extends WordpressWrapper
 
 	public function createPostypes()
 	{
+		$filtr_urojen = new JW_Post_Type('filtr',array('Filtry','Filtr'),
+			array('supports' => array('title', 'excerpt')));
+
+		$aktualnosci = new JW_Post_Type('aktualnosci',array('Aktualności','Aktualność'),
+			array('supports' => array('title', 'editor', 'thumbnail')));
+
+
+		$opinie = new JW_Post_Type('opinie',array('Opinie','Opinia'),
+			array('supports' => array('title', 'excerpt')));
+
+		$opinie->add_meta_box('autor_opinii','Autor opinii','normal',
+			array(	'Imię i nazwisko' => 'text',
+					'zawod' => 'text'
+					)
+			);
 
 	}
 
