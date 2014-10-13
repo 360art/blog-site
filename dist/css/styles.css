@@ -7897,6 +7897,10 @@ td.visible-print {
 .inspiration__icon {
   margin-top: 30px;
   margin-bottom: 40px;
+  text-align: center;
+}
+.inspiration__icon img {
+  margin-left: 65px;
 }
 .inspiration__link {
   font-size: 20px;
@@ -7935,7 +7939,7 @@ td.visible-print {
   text-align: right;
 }
 .opinion .slick-dots {
-  bottom: 45px;
+  bottom: 38px;
 }
 .opinion .slick-dots li button:before {
   width: 20px;
