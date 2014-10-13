@@ -4,7 +4,7 @@
 	var filtr_slider = $('.filtr__slider').slick({
 		vertical: true,
 		centerMode: true,
-	  	//centerPadding: '250px',
+	  	swipe: false,
 	  	slidesToShow: 3,
 	  	arrows: false
   	});
