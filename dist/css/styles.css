@@ -7830,9 +7830,11 @@ td.visible-print {
   letter-spacing: 1pt;
 }
 .program {
-  background-image: url('../images/program_tlo.jpg');
-  background-size: cover;
+  background-image: url(../images/program_tlo.jpg);
   padding-bottom: 35px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .program__section-headline-2 {
   font-family: 'Alegreya Sans', sans-serif;
@@ -7842,6 +7844,10 @@ td.visible-print {
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
+}
+.program__divider {
+  position: absolute;
+  top: 51.3%;
 }
 .program__section-headline-3 {
   font-family: 'Alegreya Sans', sans-serif;
