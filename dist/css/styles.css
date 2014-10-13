@@ -7721,6 +7721,7 @@ td.visible-print {
   background-image: url('../images/filtr.jpg');
   background-size: cover;
   position: relative;
+  padding-top: 20px;
 }
 .filtr__headline {
   position: absolute;
@@ -7901,7 +7902,7 @@ td.visible-print {
   font-size: 20px;
   color: #d5d5d5;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .inspiration__link:hover {
   color: #fff;
@@ -7923,7 +7924,6 @@ td.visible-print {
 }
 .opinion__name {
   font-size: 18px;
-  margin-bottom: 10px;
   text-transform: capitalize;
   text-align: right;
   color: #bd3636;
