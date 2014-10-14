@@ -11,39 +11,19 @@
 			<div class="row">
 				<div class="col-md-offset-1 col-md-10">
 					<div class="opinion__slider">
-						<div class="opinion__item">
-							<p class="opinion__paragraph util__text-black">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aperiam amet nemo, neque ipsa adipisci pariatur beatae tenetur quasi explicabo iure esse sed iusto nihil dignissimos natus accusamus nostrum eius. Vel quidem ducimus qui repellendus repellat in perspiciatis, provident sunt!
-							</p>
-							<div class="opinion__name">
-								Jan Kowalski
+						{% for post in opinie %}
+							<div class="opinion__item">
+								<p class="opinion__paragraph util__text-black">
+									{{post.post_excerpt}}
+								</p>
+								<div class="opinion__name">
+									{{post.meta_imię_i_nazwisko}}
+								</div>
+								<div class="opinion__role">
+									{{post.meta_zawod}}
+								</div>
 							</div>
-							<div class="opinion__role">
-								psychoterapeutka
-							</div>
-						</div>
-						<div class="opinion__item">
-							<p class="opinion__paragraph util__text-black">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aperiam amet nemo, neque ipsa adipisci pariatur beatae tenetur quasi explicabo iure esse sed iusto nihil dignissimos natus accusamus nostrum eius. Vel quidem ducimus qui repellendus repellat in perspiciatis, provident sunt!
-							</p>
-							<div class="opinion__name">
-								Jan Kowalski
-							</div>
-							<div class="opinion__role">
-								psychoterapeutka
-							</div>
-						</div>
-						<div class="opinion__item">
-							<p class="opinion__paragraph util__text-black">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aperiam amet nemo, neque ipsa adipisci pariatur beatae tenetur quasi explicabo iure esse sed iusto nihil dignissimos natus accusamus nostrum eius. Vel quidem ducimus qui repellendus repellat in perspiciatis, provident sunt!
-							</p>
-							<div class="opinion__name">
-								Jan Kowalski
-							</div>
-							<div class="opinion__role">
-								psychoterapeutka
-							</div>
-						</div>
+						{% endfor %}
 					</div>
 				</div>
 			</div>

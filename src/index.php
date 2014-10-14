@@ -20,8 +20,15 @@ $args = array('post_type'=>'aktualnosci',
 				'order' => 'DESC');
 $aktualnosci = Timber::get_posts($args);
 
+$args = array('post_type'=>'opinie',
+				'limit' => '5',
+				'orderby' => 'date',
+				'order' => 'DESC');
+$opinie = Timber::get_posts($args);
+
 $theme->view('index', array(
 	'posts' => $posts,
 	'filtry' => $filtry,
 	'aktualnosci' => $aktualnosci,
+	'opinie' => $opinie,
 ));
