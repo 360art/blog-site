@@ -8,39 +8,19 @@
 			</div>
 		</div>
 		<div class="row">
+			{% for post in aktualnosci %}
 			<div class="col-md-4 col-sm-6">
-				<img src="http://lorempixel.com/300/200" class="news__img img-responsive" alt="Lorem">
-				<h2 class="news__title">Umysł w naturze</h2>
-				<h3 class="news__author-date">Jan Kowalski 2 kwietnia 2014</h3>
+				<img src="{{post.thumbnail}}" class="news__img img-responsive" alt="Lorem">
+				<h2 class="news__title">{{post.title}}</h2>
+				<h3 class="news__author-date">{{post.meta_imię_i_nazwisko}} {{post.post_date}}</h3>
 				<p class="util__paragraph util__text-black">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nihil est velit voluptatum placeat voluptas quaerat saepe dolore, quis voluptates eaque nemo dolorum cumque ullam expedita explicabo architecto hic iste sapiente minima ea. Reiciendis enim, deserunt mollitia suscipit molestiae in. Quae vero, aut quidem amet repellendus dolorum voluptatum corporis corrupti reprehenderit neque fuga, sequi architecto blanditiis recusandae maiores. Libero labore ipsam autem quisquam vel voluptas excepturi ea, a nihil accusamus sunt minus, odio sit culpa facere tempora nesciunt sapiente eligendi. Ex provident et ratione eaque, modi quam dolor similique quaerat itaque atque sunt est ab voluptate neque inventore, exercitationem in.
+					{{post.post_content}}
 				</p>
 				<div class="news__more-wrap">
 					<a class="news__more" href="#">Czytaj Dalej</a>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6">
-				<img src="http://lorempixel.com/300/200" class="news__img img-responsive" alt="Lorem">
-				<h2 class="news__title">Umysł w naturze</h2>
-				<h3 class="news__author-date">Jan Kowalski 2 kwietnia 2014</h3>
-				<p class="util__paragraph util__text-black">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nihil est velit voluptatum placeat voluptas quaerat saepe dolore, quis voluptates eaque nemo dolorum cumque ullam expedita explicabo architecto hic iste sapiente minima ea. Reiciendis enim, deserunt mollitia suscipit molestiae in. Quae vero, aut quidem amet repellendus dolorum voluptatum corporis corrupti reprehenderit neque fuga, sequi architecto blanditiis recusandae maiores. Libero labore ipsam autem quisquam vel voluptas excepturi ea, a nihil accusamus sunt minus, odio sit culpa facere tempora nesciunt sapiente eligendi. Ex provident et ratione eaque, modi quam dolor similique quaerat itaque atque sunt est ab voluptate neque inventore, exercitationem in.
-				</p>
-				<div class="news__more-wrap">
-					<a class="news__more" href="#">Czytaj Dalej</a>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<img src="http://lorempixel.com/300/200" class="news__img img-responsive" alt="Lorem">
-				<h2 class="news__title">Umysł w naturze</h2>
-				<h3 class="news__author-date">Jan Kowalski 2 kwietnia 2014</h3>
-				<p class="util__paragraph util__text-black">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nihil est velit voluptatum placeat voluptas quaerat saepe dolore, quis voluptates eaque nemo dolorum cumque ullam expedita explicabo architecto hic iste sapiente minima ea. Reiciendis enim, deserunt mollitia suscipit molestiae in. Quae vero, aut quidem amet repellendus dolorum voluptatum corporis corrupti reprehenderit neque fuga, sequi architecto blanditiis recusandae maiores. Libero labore ipsam autem quisquam vel voluptas excepturi ea, a nihil accusamus sunt minus, odio sit culpa facere tempora nesciunt sapiente eligendi. Ex provident et ratione eaque, modi quam dolor similique quaerat itaque atque sunt est ab voluptate neque inventore, exercitationem in.
-				</p>
-				<div class="news__more-wrap">
-					<a class="news__more" href="#">Czytaj Dalej</a>
-				</div>
-			</div>
+			{% endfor %}
 		</div>
 	</div>
 </div>

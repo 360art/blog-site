@@ -11,10 +11,17 @@
 // Posts
 $posts = Timber::get_posts();
 
-$args = array('post_type'=>'filtr', 'type' => 'excerpt');
+$args = array('post_type'=>'filtr');
 $filtry = Timber::get_posts($args);
+
+$args = array('post_type'=>'aktualnosci',
+				'limit' => '3',
+				'orderby' => 'date',
+				'order' => 'DESC');
+$aktualnosci = Timber::get_posts($args);
 
 $theme->view('index', array(
 	'posts' => $posts,
 	'filtry' => $filtry,
+	'aktualnosci' => $aktualnosci,
 ));

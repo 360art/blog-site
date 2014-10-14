@@ -65,35 +65,35 @@ class Theme extends WordpressWrapper
 		$this->register('style', array(
 			'wsip' => array(
 				'path' => 'css/styles.min.css'
-			)
-		));
+				)
+			));
 
 		// Deregister
 		$this->deregister('script', array(
 			'jquery'
-		));
+			));
 
 		// Register and enqueue scripts
 		$this->register('script', array(
 			'jquery' => array(
 				'path' => 'js/vendor/jquery.min.js',
 				'footer' => true
-			),
+				),
 			'modernizr' => array(
 				'path' => 'js/vendor/modernizr.js',
 				'footer' => false
-			),
+				),
 			'bootstrap' => array(
 				'path' => 'js/vendor/bootstrap.min.js',
 				'dependences' => array('jquery'),
 				'footer' => true
-			),
+				),
 			'scripts' => array(
 				'path' => 'js/scripts.min.js',
 				'dependences' => array('jquery', 'modernizr', 'bootstrap'),
 				'footer' => true
-			)
-		));
+				)
+			));
 
 	}
 
@@ -106,14 +106,19 @@ class Theme extends WordpressWrapper
 		$aktualnosci = new JW_Post_Type('aktualnosci',array('Aktualności','Aktualność'),
 			array('supports' => array('title', 'editor', 'thumbnail')));
 
+		$aktualnosci->add_meta_box('autor_opinii','Autor opinii','normal',
+			array(	'Imię i nazwisko' => 'text',
+				)
+			);
+
 
 		$opinie = new JW_Post_Type('opinie',array('Opinie','Opinia'),
 			array('supports' => array('title', 'excerpt')));
 
 		$opinie->add_meta_box('autor_opinii','Autor opinii','normal',
 			array(	'Imię i nazwisko' => 'text',
-					'zawod' => 'text'
-					)
+				'zawod' => 'text'
+				)
 			);
 
 	}
@@ -139,7 +144,7 @@ class Theme extends WordpressWrapper
 
 		$this->actions(array(
 			'wp_enqueue_scripts' => 'enqueueScripts'
-		));
+			));
 
 		$this->createPostypes();
 		$this->createTaxonomies();

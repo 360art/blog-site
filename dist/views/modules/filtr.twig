@@ -7,13 +7,11 @@
 					<div class="filtr__arrow filtr__arrow-down fa fa-angle-down"></div>
 					<div class="filtr__arrow filtr__arrow-up fa fa-angle-up"></div>
 					<div class="filtr__slider">
-
 							{% for post in filtry %}
 							<div>
-								{{post}}
+								{{post.post_excerpt}}
 							</div>
 							{% endfor %}
-
 					</div>
 				</div>
 			</div>
