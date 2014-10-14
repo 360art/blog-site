@@ -7,36 +7,13 @@
 					<div class="filtr__arrow filtr__arrow-down fa fa-angle-down"></div>
 					<div class="filtr__arrow filtr__arrow-up fa fa-angle-up"></div>
 					<div class="filtr__slider">
-						<div>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloremque quidem ullam enim, similique, delectus 
-							<div class="filtr__more">
-								aut earum hic nulla architecto sint ipsa veritatis excepturi sapiente aliquid expedita nisi recusandae! Atque.
+
+							{% for post in filtry %}
+							<div>
+								{{post}}
 							</div>
-						</div>
-						<div>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloremque quidem ullam enim, similique, delectus 
-							<div class="filtr__more">
-								aut earum hic nulla architecto sint ipsa veritatis excepturi sapiente aliquid expedita nisi recusandae! Atque.
-							</div>
-						</div>
-						<div>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloremque quidem ullam enim, similique, delectus 
-							<div class="filtr__more">
-								aut earum hic nulla architecto sint ipsa veritatis excepturi sapiente aliquid expedita nisi recusandae! Atque.
-							</div>
-						</div>
-						<div>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloremque quidem ullam enim, similique, delectus 
-							<div class="filtr__more">
-								aut earum hic nulla architecto sint ipsa veritatis excepturi sapiente aliquid expedita nisi recusandae! Atque.
-							</div>
-						</div>
-						<div>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloremque quidem ullam enim, similique, delectus 
-							<div class="filtr__more">
-								aut earum hic nulla architecto sint ipsa veritatis excepturi sapiente aliquid expedita nisi recusandae! Atque.
-							</div>
-						</div>
+							{% endfor %}
+
 					</div>
 				</div>
 			</div>
