@@ -121,6 +121,16 @@ class Theme extends WordpressWrapper
 				)
 			);
 
+		$inspiracje = new JW_Post_Type('inspiracje',array('Inspiracje','Inspiracja'),
+			array('supports' => array('title')));
+
+		$inspiracje->add_meta_box('plik','Plik','normal',
+			array(	'Opis' => 'text',
+				'Uploader' => 'file',
+				'Typ dokumentu' => array('select', array('Tekst','Audio','Wideo')),
+				)
+			);
+
 	}
 
 

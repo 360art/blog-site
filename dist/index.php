@@ -26,9 +26,13 @@ $args = array('post_type'=>'opinie',
 				'order' => 'DESC');
 $opinie = Timber::get_posts($args);
 
+$args = array('post_type'=>'inspiracje');
+$pliki = Timber::get_posts($args);
+
 $theme->view('index', array(
 	'posts' => $posts,
 	'filtry' => $filtry,
 	'aktualnosci' => $aktualnosci,
 	'opinie' => $opinie,
+	'pliki' => $pliki,
 ));
