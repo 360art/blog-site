@@ -1,10 +1,30 @@
 .opinion {
 	background-color: #f5f3f3;
 
+	&__item {
+		padding-left: 75px;
+		padding-right: 75px;
+	}
+
+	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { 
+		&__item {
+			padding-left: 45px;
+			padding-right: 45px;
+		}
+	}
+
+	@media (max-width: @screen-xs-max) {
+		&__item {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
+
+
 	&__paragraph {
 		font-size: 18px;
 		padding-bottom: 24px;
-		corlo: #3c3c3c;
+		color: #3c3c3c;
 		&:before {
 			content: "\201C";
 		}
@@ -26,7 +46,7 @@
 	}
 	.slick-dots 
 	{
-		bottom: 38px;
+		bottom: -10px;
 		li button:before {
 			width: 20px;
 			height: 20px;

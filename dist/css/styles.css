@@ -7697,6 +7697,7 @@ td.visible-print {
 }
 .nav__logo img {
   width: 300px;
+  margin: 0 auto;
 }
 .nav__menu {
   list-style: none;
@@ -7934,10 +7935,26 @@ td.visible-print {
 .opinion {
   background-color: #f5f3f3;
 }
+.opinion__item {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .opinion__item {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .opinion__item {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
 .opinion__paragraph {
   font-size: 18px;
   padding-bottom: 24px;
-  corlo: #3c3c3c;
+  color: #3c3c3c;
 }
 .opinion__paragraph:before {
   content: "\201C";
@@ -7958,7 +7975,7 @@ td.visible-print {
   text-align: right;
 }
 .opinion .slick-dots {
-  bottom: 38px;
+  bottom: -10px;
 }
 .opinion .slick-dots li button:before {
   width: 20px;
