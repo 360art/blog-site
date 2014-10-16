@@ -3,6 +3,7 @@
 require_once 'includes/classes/jw_custom_posts.php';
 require_once 'includes/classes/wordpressWrapper.php';
 require_once 'includes/classes/theme.php';
+require_once 'includes/classes/theme_settings.php';
 
 $theme = new Theme(
 	// Theme directory
