@@ -73,9 +73,9 @@ class MySettingsPage
             );
 
         add_settings_field(
-            'e-mail_id', // ID
+            'e_mail_id', // ID
             'E-mail', // Title 
-            array( $this, 'id_number_callback' ), // Callback
+            array( $this, 'e_mail_id_callback' ), // Callback
             'my-setting-admin', // Page
             'setting_section_id' // Section           
             );      
@@ -83,7 +83,7 @@ class MySettingsPage
         add_settings_field(
             'telefon_id', 
             'Telefon', 
-            array( $this, 'title_callback' ), 
+            array( $this, 'telephone_callback' ), 
             'my-setting-admin', 
             'setting_section_id'
             );
@@ -99,7 +99,7 @@ class MySettingsPage
         add_settings_field(
             'down_link_id', // ID
             'Link do "Pobierz wszystko"', // Title 
-            array( $this, 'id_number_callback' ), // Callback
+            array( $this, 'down_link_id_callback' ), // Callback
             'my-setting-admin', // Page
             'buttons_id' // Section           
             );
@@ -114,11 +114,14 @@ class MySettingsPage
     public function sanitize( $input )
     {
         $new_input = array();
-        if( isset( $input['id_number'] ) )
-            $new_input['id_number'] = absint( $input['id_number'] );
+        if( isset( $input['e_mail_id'] ) )
+            $new_input['e_mail_id'] = sanitize_text_field( $input['e_mail_id'] );
 
-        if( isset( $input['title'] ) )
-            $new_input['title'] = sanitize_text_field( $input['title'] );
+        if( isset( $input['telefon_id'] ) )
+            $new_input['telefon_id'] = sanitize_text_field( $input['telefon_id'] );
+
+        if( isset( $input['down_link_id'] ) )
+            $new_input['down_link_id'] = sanitize_text_field( $input['down_link_id'] );
 
         return $new_input;
     }
@@ -134,22 +137,33 @@ class MySettingsPage
     /** 
      * Get the settings option array and print one of its values
      */
-    public function id_number_callback()
+    public function e_mail_id_callback()
     {
         printf(
-            '<input type="text" id="id_number" name="my_option_name[id_number]" value="%s" />',
-            isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
+            '<input type="text" id="e_mail_id" name="my_option_name[e_mail_id]" value="%s" />',
+            isset( $this->options['e_mail_id'] ) ? esc_attr( $this->options['e_mail_id']) : ''
             );
     }
 
     /** 
      * Get the settings option array and print one of its values
      */
-    public function title_callback()
+    public function telephone_callback()
     {
         printf(
-            '<input type="text" id="title" name="my_option_name[title]" value="%s" />',
-            isset( $this->options['title'] ) ? esc_attr( $this->options['title']) : ''
+            '<input type="text" id="telefon_id" name="my_option_name[telefon_id]" value="%s" />',
+            isset( $this->options['telefon_id'] ) ? esc_attr( $this->options['telefon_id']) : ''
+            );
+    }
+
+    /** 
+     * Get the settings option array and print one of its values
+     */
+    public function down_link_id_callback()
+    {
+        printf(
+            '<input type="text" id="down_link_id" name="my_option_name[down_link_id]" value="%s" />',
+            isset( $this->options['down_link_id'] ) ? esc_attr( $this->options['down_link_id']) : ''
             );
     }
 }
