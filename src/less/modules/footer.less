@@ -4,8 +4,13 @@
 
 	&__contact {
 		margin-top: 20px;
+		text-align: center;
 		img {
 			margin-right: 30px;
+			@media (max-width: @screen-xs-max) {
+				display: block;
+				margin: 0 auto;
+			}
 		}
 	}
 	&__item {

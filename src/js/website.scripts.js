@@ -9,12 +9,20 @@
 		arrows: true,
 		onInit: function() {
 			$('.slick-active').eq(1).css('color', 'white')
-				.siblings().css('color', 'gray');
+			.siblings().css('color', 'gray');
 		},
 		onAfterChange: function() {
 			$('.slick-active').eq(1).css('color', 'white')
-				.siblings().css('color', 'gray');
-		}
+			.siblings().css('color', 'gray');
+		},
+		// responsive: [
+		// {
+		// 	breakpoint: 480,
+		// 	settings: {
+		// 		slidesToShow: 1,
+		// 	}
+		// }
+		// ]
 	});
 	//EOF Filtr urojen slider
 

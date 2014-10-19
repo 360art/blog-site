@@ -35,6 +35,10 @@
 		margin: 0;
 		padding: 0;
 		margin-bottom: 24px;
+		@media (max-width: @screen-xs-max) {
+			margin-bottom: 4px;
+		}
+
 	}
 	&__section-headline-4 {
 		font-family: @font-family-serif;
@@ -47,6 +51,11 @@
 		padding: 0;
 		margin-top: 30px;
 		margin-bottom: 38px;
+		@media (max-width: @screen-xs-max) {
+			text-align: left;
+			margin-top: 10px;
+			margin-bottom: 18px;
+		}
 	}
 	&__list {
 		font-family: @font-family-serif;
@@ -60,6 +69,10 @@
 		}
 		li:nth-child(even) {
 			margin-left: 40px;
+			@media (max-width: @screen-xs-max) {
+				margin-left: 0px;
+				font-weight: 700;
+			}
 		} 
 	}
 }
