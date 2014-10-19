@@ -14,10 +14,10 @@
 				<h2 class="news__title">{{post.title}}</h2>
 				<h3 class="news__author-date">{{post.meta_imię_i_nazwisko}} {{post.post_date}}</h3>
 				<p class="util__paragraph util__text-black">
-					{{post.post_content}}
+					{{post.post_excerpt}}
 				</p>
 				<div class="news__more-wrap">
-					<a class="news__more" href="#">Czytaj Dalej</a>
+					<a class="news__more" href="{{post.guid}}">Czytaj Dalej</a>
 				</div>
 			</div>
 			{% endfor %}

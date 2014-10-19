@@ -88,6 +88,11 @@ class Theme extends WordpressWrapper
 				'dependences' => array('jquery'),
 				'footer' => true
 				),
+			'magnificpopup' => array(
+				'path' => 'js/vendor/magnific.js',
+				'dependences' => array('jquery'),
+				'footer' => true
+				),
 			'scripts' => array(
 				'path' => 'js/scripts.min.js',
 				'dependences' => array('jquery', 'modernizr', 'bootstrap'),
@@ -104,7 +109,7 @@ class Theme extends WordpressWrapper
 			array('supports' => array('title', 'excerpt')));
 
 		$aktualnosci = new JW_Post_Type('aktualnosci',array('Aktualności','Aktualność'),
-			array('supports' => array('title', 'editor', 'thumbnail')));
+			array('supports' => array('title', 'excerpt', 'editor', 'thumbnail')));
 
 		$aktualnosci->add_meta_box('autor','Autor','normal',
 			array(	'Imię i nazwisko' => 'text',
