@@ -32,6 +32,12 @@
 
 	&__slider {
 		font-size: 24px;
+		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+			font-size: 17px;
+		}
+		@media (max-width: @screen-xs-max) {
+			font-size: 17px;
+		}
 	}
 
 	&__slide {
