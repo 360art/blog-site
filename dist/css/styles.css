@@ -7723,11 +7723,9 @@ td.visible-print {
 }
 .filtr {
   color: #fff;
-  min-height: 650px;
   background-image: url('../images/filtr.jpg');
   background-size: cover;
   position: relative;
-  padding-top: 20px;
 }
 .filtr__headline {
   position: absolute;
@@ -7736,38 +7734,35 @@ td.visible-print {
   font-variant: small-caps;
   font-size: 30px;
 }
+@media (max-width: 767px) {
+  .filtr__headline {
+    width: 100%;
+    text-align: center;
+    top: -9px;
+  }
+}
 .filtr__slider-wrap {
-  display: table;
-  min-height: 650px;
-  width: 65%;
+  height: 660px !important;
+  width: 66%;
   margin: 0 auto;
 }
+@media (max-width: 767px) {
+  .filtr__slider-wrap {
+    width: 90%;
+  }
+}
 .filtr__slider {
-  display: table-cell !important;
-  vertical-align: middle;
   font-size: 24px;
-  text-align: center;
 }
-.filtr__arrow {
-  position: absolute;
-  color: white;
-  z-index: 10;
-  font-size: 45px;
-  cursor: pointer;
+.filtr__slide {
+  width: 100%;
+  height: 220px !important;
+  display: table !important;
+  text-align: center !important;
 }
-.filtr__arrow-up {
-  left: 50%;
-  top: 250px;
-  margin-left: -20px;
-}
-.filtr__arrow-down {
-  left: 50%;
-  bottom: 250px;
-  margin-left: -20px;
-}
-.filtr .slick-slide {
-  padding-top: 65px;
-  padding-bottom: 65px;
+.filtr__slide span {
+  display: table-cell !important;
+  vertical-align: middle !important;
 }
 .news h1,
 .news h2,
@@ -7975,17 +7970,6 @@ td.visible-print {
   margin-bottom: 36px;
   text-align: right;
 }
-.opinion .slick-dots {
-  bottom: -10px;
-}
-.opinion .slick-dots li button:before {
-  width: 20px;
-  height: 20px;
-  font-size: 13px;
-}
-.opinion .slick-dots li.slick-active button:before {
-  color: #be3838;
-}
 .footer {
   background-color: #264242;
   padding-bottom: 40px;
@@ -8097,28 +8081,15 @@ td.visible-print {
   height: auto;
   border: 1px solid transparent;
 }
-/* Icons */
-@font-face {
-  font-family: "slick";
-  src: url("../fonts/slick.eot");
-  src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick.woff") format("woff"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.svg#slick") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 /* Arrows */
 .slick-prev,
 .slick-next {
   position: absolute;
   display: block;
-  height: 20px;
-  width: 20px;
   line-height: 0;
-  font-size: 0;
   cursor: pointer;
   background: transparent;
   color: transparent;
-  top: 50%;
-  margin-top: -10px;
   padding: 0;
   border: none;
   outline: none;
@@ -8143,8 +8114,8 @@ td.visible-print {
 }
 .slick-prev:before,
 .slick-next:before {
-  font-family: "slick";
-  font-size: 20px;
+  font-family: "FontAwesome";
+  font-size: 45px;
   line-height: 1;
   color: white;
   opacity: 0.75;
@@ -8152,16 +8123,20 @@ td.visible-print {
   -moz-osx-font-smoothing: grayscale;
 }
 .slick-prev {
-  left: -25px;
+  left: 50%;
+  top: 225px;
+  margin-left: -20px;
 }
 .slick-prev:before {
-  content: "\2190";
+  content: "\f106";
 }
 .slick-next {
-  right: -25px;
+  left: 50%;
+  bottom: 225px;
+  margin-left: -20px;
 }
 .slick-next:before {
-  content: "\2192";
+  content: "\f107";
 }
 /* Dots */
 .slick-slider {
@@ -8169,7 +8144,7 @@ td.visible-print {
 }
 .slick-dots {
   position: absolute;
-  bottom: -45px;
+  bottom: -10px;
   list-style: none;
   display: block;
   text-align: center;
@@ -8213,8 +8188,8 @@ td.visible-print {
   content: "\2022";
   width: 20px;
   height: 20px;
+  font-size: 45px;
   font-family: "slick";
-  font-size: 6px;
   line-height: 20px;
   text-align: center;
   color: black;
@@ -8223,7 +8198,7 @@ td.visible-print {
   -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before {
-  color: black;
+  color: #be3838;
   opacity: 0.75;
 }
 [dir="rtl"] .slick-next {

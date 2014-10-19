@@ -1,49 +1,50 @@
 .filtr {
-	@arrow-offset: 250px;
+
 	color: #fff;
-	min-height: 650px;
 	background-image: url('../images/filtr.jpg');
 	background-size: cover;
 	position: relative;
-	padding-top: 20px;
+
 	&__headline {
 		position: absolute;
 		top:0;
 		left: 0;
 		font-variant: small-caps;
 		font-size: 30px;
+
+		@media (max-width: @screen-xs-max) {
+			width: 100%;
+			text-align: center;
+			top: -9px;
+		}
+
 	}
+
 	&__slider-wrap {
-		display: table;
-		min-height: 650px;
-		width: 65%;
+		height: 660px !important;
+		width: 66%;
 		margin: 0 auto;
+
+		@media (max-width: @screen-xs-max) {
+			width: 90%;
+		}
 	}
+
 	&__slider {
-		display: table-cell !important;
-		vertical-align: middle;
 		font-size: 24px;
-		text-align: center;
 	}
-	&__arrow {
-		position: absolute;
-		color: white;
-		z-index: 10;
-		font-size: 45px;
-		cursor: pointer;
+
+	&__slide {
+		width: 100%;
+		height: 220px !important;
+		display: table !important;
+		text-align: center !important;
+
+		span {
+			display: table-cell !important;
+			vertical-align: middle !important;
+		}
+
 	}
-	&__arrow-up {
-		left: 50%;
-		top: @arrow-offset;
-		margin-left: -20px;
-	}
-	&__arrow-down {
-		left: 50%;
-		bottom: @arrow-offset;
-		margin-left: -20px;
-	}
-	.slick-slide {
-		padding-top: 65px;
-		padding-bottom: 65px;
-	}
+
 }

@@ -6,26 +6,15 @@
 		centerMode: true,
 		swipe: false,
 		slidesToShow: 3,
-		arrows: false
-	});
-
-	//Dim even sections
-	function dimText(filtr_set) {
-		filtr_set.filter( ":even" ).css('color','gray');
-		filtr_set.eq(1)	.css('color','#fff').fadeIn();
-	}
-
-	//Dim
-	dimText($('.slick-active'));
-
-	$('.filtr__arrow-up').click(function(){
-		filtr_slider.slickPrev();
-		dimText($('.slick-active'));
-	});
-
-	$('.filtr__arrow-down').click(function(){
-		filtr_slider.slickNext();
-		dimText($('.slick-active'));
+		arrows: true,
+		onInit: function() {
+			$('.slick-active').eq(1).css('color', 'white')
+				.siblings().css('color', 'gray');
+		},
+		onAfterChange: function() {
+			$('.slick-active').eq(1).css('color', 'white')
+				.siblings().css('color', 'gray');
+		}
 	});
 	//EOF Filtr urojen slider
 
@@ -37,7 +26,7 @@
 	//EOF Opinie slider
 
 	//News modal
-	$('.news__more').magnificPopup({ 
+	$('.news__more').magnificPopup({
 		type: 'iframe',
 		tClose: 'Zamknij (Esc)',
 		tLoading: 'Ładowanie...',
@@ -45,8 +34,8 @@
 			markup:'<div class="mfp-iframe-scaler">'+
 			'<div class="mfp-close"></div>'+
 			'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-			'</div>', 
-		}   
+			'</div>',
+		}
 	});
 
 })();
