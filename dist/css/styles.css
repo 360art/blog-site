@@ -7751,7 +7751,6 @@ td.visible-print {
     text-align: center;
     top: -9px;
     z-index: 2;
-    background-color: #0e0e0e;
   }
 }
 .filtr__slider-wrap {
@@ -7832,6 +7831,7 @@ td.visible-print {
 }
 .single {
   background-color: #fff;
+  padding: 20px;
 }
 .single__title {
   display: inline-block;
