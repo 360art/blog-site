@@ -7968,6 +7968,9 @@ td.visible-print {
 .inspiration__icon img {
   margin-left: 65px;
 }
+.inspiration__icon-last img {
+  margin-left: 89px;
+}
 .inspiration__link {
   font-size: 20px;
   color: #d5d5d5;
