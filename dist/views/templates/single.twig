@@ -8,16 +8,13 @@
 	</head>
 	<body id="body">
 		<div class="container-fluid">
-		{% include 'modules/navigation.twig' %}
+			<div class="col-md-12">
 
-		{% block filtr %}{% endblock %}
-		{% block news %}{% endblock %}
-		{% block about %}{% endblock %}
-		{% block program %}{% endblock %}
-		{% block inspiration %}{% endblock %}
-		{% block opinion %}{% endblock %}
-		{% block footer %}{% endblock %}
-
+				<?php 
+				$value = get_query_var('p');
+				echo $value;
+				?>
+			</div>
 		</div>
 		{{ wp_footer }}
 
