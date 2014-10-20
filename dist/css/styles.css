@@ -7890,7 +7890,8 @@ td.visible-print {
   background-image: url(../images/program_tlo.jpg);
   padding-bottom: 35px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: top center;
+  background-color: #cfcfcf;
   position: relative;
 }
 .program__section-headline-2 {

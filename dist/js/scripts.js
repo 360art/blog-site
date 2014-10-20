@@ -2005,7 +2005,7 @@ $(document).ready(function() {
 		onAfterChange: function() {
 			$('.slick-active').eq(1).css('color', 'white')
 			.siblings().css('color', 'gray');
-		},
+		}
 		// responsive: [
 		// {
 		// 	breakpoint: 480,
