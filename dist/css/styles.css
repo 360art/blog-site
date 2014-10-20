@@ -7829,6 +7829,9 @@ td.visible-print {
   background-color: #bd3636;
   text-decoration: none;
 }
+.mfp-iframe-holder .mfp-content {
+  height: 90%;
+}
 .single {
   background-color: #fff;
   padding: 20px;
