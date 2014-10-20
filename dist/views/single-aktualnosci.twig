@@ -1,12 +1,10 @@
 <link rel='stylesheet' href='{{site.theme.link}}/css/styles.min.css' type='text/css' media='screen' />
 <div class="single">
-	<img src="{{post.thumbnail.src('medium')}}" alt="{{post.title}}" class="thumbnail single__inline-block img-responsive">
+	<img src="{{post.thumbnail.src('medium')}}" alt="{{post.title}}" class="single__inline-block">
 	<div class="single__title">
 		{{post.title}}
 	</div>
-	<div class="col-md-12">
 		<div class="single__paragraph util__text-black">
 			{{post.content}}
 		</div>
-	</div>
 </div>

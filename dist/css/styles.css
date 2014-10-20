@@ -7833,6 +7833,9 @@ td.visible-print {
   background-color: #fff;
   padding: 20px;
 }
+.single img {
+  padding: 10px;
+}
 .single__title {
   display: inline-block;
   color: #bd3636;
@@ -7843,11 +7846,12 @@ td.visible-print {
   padding-left: 10px;
 }
 .single__paragraph {
-  padding-bottom: 24px;
   font-family: 'Vesper Libre', serif;
   font-size: 16px;
+  margin-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 24px;
 }
 .single__inline-block {
   display: inline-block;
