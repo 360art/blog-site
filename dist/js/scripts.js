@@ -2219,19 +2219,25 @@ var Shira;
 		onInit: function() {
 			$('.slick-active').eq(1).css('color', 'white')
 			.siblings().css('color', 'gray');
+
+			var full_text = $('.slick-active').eq(1).data('full');
+			var excerpt = $('.slick-active').eq(1).data('excerpt');
+			$('.slick-active').eq(1).empty().append('<span>'+full_text+'</span>')
+			.siblings().css('color', 'gray');
 		},
 		onAfterChange: function() {
-			$('.slick-active').eq(1).css('color', 'white')
+			var full_text = $('.slick-active').eq(1).data('full');
+			var active = $('.slick-active').not(':eq(1)');
+
+			//Zamien wszystkie pozostałe tresci na excerpt
+			active.each(function(){
+				var item_excerpt = $(this).data('excerpt');
+				$(this).empty().append('<span>'+item_excerpt+'</span>');
+			});
+
+			$('.slick-active').eq(1).empty().append('<span>'+full_text+'</span>').css('color','white')
 			.siblings().css('color', 'gray');
 		}
-		// responsive: [
-		// {
-		// 	breakpoint: 480,
-		// 	settings: {
-		// 		slidesToShow: 1,
-		// 	}
-		// }
-		// ]
 	});
 	//EOF Filtr urojen slider
 

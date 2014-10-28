@@ -6,8 +6,8 @@
 				<div class="filtr__slider-wrap">
 					<div class="filtr__slider">
 						{% for post in filtry %}
-							<div class="filtr__slide">
-								<span>{{post.post_excerpt}}</span>
+							<div class="filtr__slide" data-excerpt="{{post.post_excerpt|excerpt(10)}}" data-full="{{post.post_excerpt}}">
+								<span>{{post.post_excerpt|excerpt(10)}}</span>
 							</div class="filtr__slide">
 						{% endfor %}
 					</div>
