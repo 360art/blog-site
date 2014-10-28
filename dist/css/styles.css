@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,700&subset=latin,latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Vesper+Libre&subset=latin,latin-ext);
 /*
  | ---------------------------------------------------
@@ -263,7 +263,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -345,7 +345,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -7655,7 +7655,7 @@ td.visible-print {
  | Import theme modules
 */
 .util__headline-1 {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   padding-top: 36px;
   padding-bottom: 12px;
   margin: 0;
@@ -7665,7 +7665,7 @@ td.visible-print {
   margin-bottom: 24px;
 }
 .util__headline-2 {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 24px;
   padding-bottom: 36px;
   margin: 0;
@@ -7902,7 +7902,7 @@ td.visible-print {
   color: #c2c2c2;
   font-variant: small-caps;
   font-size: 14px;
-  letter-spacing: 1pt;
+  letter-spacing: 2px;
 }
 .program {
   background-image: url(../images/program_tlo.jpg);
@@ -7913,7 +7913,7 @@ td.visible-print {
   position: relative;
 }
 .program__section-headline-2 {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 30px;
   letter-spacing: 3pt;
   font-variant: small-caps;
@@ -7934,7 +7934,7 @@ td.visible-print {
   }
 }
 .program__section-headline-3 {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 24px;
   letter-spacing: 1pt;
   font-variant: small-caps;
@@ -7986,6 +7986,14 @@ td.visible-print {
     font-weight: 700;
   }
 }
+.program__download-all {
+  width: 296px;
+  height: 85px;
+  background-image: url(../images/down_all.png);
+}
+.program__download-all:hover {
+  background-position: 0px -84px;
+}
 .inspiration {
   background-image: url('../images/brain.jpg');
   padding-bottom: 30px;
@@ -7998,7 +8006,7 @@ td.visible-print {
   margin: 0;
   padding: 0;
   margin-left: 20px;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 24px;
   font-variant: small-caps;
 }
@@ -8026,9 +8034,12 @@ td.visible-print {
 .opinion {
   background-color: #f5f3f3;
 }
+.opinion__color {
+  color: #3c3c3c;
+}
 .opinion__item {
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 110px;
+  padding-right: 110px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .opinion__item {
@@ -8043,8 +8054,10 @@ td.visible-print {
   }
 }
 .opinion__paragraph {
+  font-family: 'Vesper Libre', serif;
   font-size: 18px;
-  padding-bottom: 24px;
+  line-height: 28px;
+  padding-bottom: 12px;
   color: #3c3c3c;
 }
 .opinion__paragraph:before {
@@ -8060,7 +8073,7 @@ td.visible-print {
   color: #bd3636;
 }
 .opinion__role {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 18px;
   margin-bottom: 36px;
   text-align: right;
@@ -8083,7 +8096,7 @@ td.visible-print {
   }
 }
 .footer__item {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 30px;
 }
 .footer__item:hover {
@@ -8226,7 +8239,7 @@ td.visible-print {
 }
 .slick-prev {
   left: 50%;
-  top: 200px;
+  top: 150px;
   margin-left: -20px;
 }
 .slick-prev:before {
@@ -8234,7 +8247,7 @@ td.visible-print {
 }
 .slick-next {
   left: 50%;
-  bottom: 200px;
+  bottom: 150px;
   margin-left: -20px;
 }
 .slick-next:before {
