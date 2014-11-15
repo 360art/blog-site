@@ -78,7 +78,31 @@ class MySettingsPage
             array( $this, 'e_mail_id_callback' ), // Callback
             'my-setting-admin', // Page
             'setting_section_id' // Section           
-            );      
+            );
+
+        add_settings_field(
+            'twitter_id', // ID
+            'Twitter', // Title 
+            array( $this, 'twitter_id_callback' ), // Callback
+            'my-setting-admin', // Page
+            'setting_section_id' // Section           
+            ); 
+
+        add_settings_field(
+            'skype_id', // ID
+            'Skype', // Title 
+            array( $this, 'skype_id_callback' ), // Callback
+            'my-setting-admin', // Page
+            'setting_section_id' // Section           
+            );  
+
+        add_settings_field(
+            'facebook_id', // ID
+            'Facebook', // Title 
+            array( $this, 'facebook_id_callback' ), // Callback
+            'my-setting-admin', // Page
+            'setting_section_id' // Section           
+            ); 
 
         add_settings_field(
             'telefon_id', 
@@ -120,6 +144,15 @@ class MySettingsPage
         if( isset( $input['telefon_id'] ) )
             $new_input['telefon_id'] = sanitize_text_field( $input['telefon_id'] );
 
+        if( isset( $input['twitter_id'] ) )
+            $new_input['twitter_id'] = sanitize_text_field( $input['twitter_id'] );
+
+        if( isset( $input['skype_id'] ) )
+            $new_input['skype_id'] = sanitize_text_field( $input['skype_id'] );
+
+        if( isset( $input['facebook_id'] ) )
+            $new_input['facebook_id'] = sanitize_text_field( $input['facebook_id'] );
+
         if( isset( $input['down_link_id'] ) )
             $new_input['down_link_id'] = sanitize_text_field( $input['down_link_id'] );
 
@@ -142,6 +175,39 @@ class MySettingsPage
         printf(
             '<input type="text" id="e_mail_id" name="my_option_name[e_mail_id]" value="%s" />',
             isset( $this->options['e_mail_id'] ) ? esc_attr( $this->options['e_mail_id']) : ''
+            );
+    }
+
+     /** 
+     * Get the settings option array and print one of its values
+     */
+    public function twitter_id_callback()
+    {
+        printf(
+            '<input type="text" id="twitter_id" name="my_option_name[twitter_id]" value="%s" />',
+            isset( $this->options['twitter_id'] ) ? esc_attr( $this->options['twitter_id']) : ''
+            );
+    }
+
+     /** 
+     * Get the settings option array and print one of its values
+     */
+    public function skype_id_callback()
+    {
+        printf(
+            '<input type="text" id="skype_id" name="my_option_name[skype_id]" value="%s" />',
+            isset( $this->options['skype_id'] ) ? esc_attr( $this->options['skype_id']) : ''
+            );
+    }
+
+     /** 
+     * Get the settings option array and print one of its values
+     */
+    public function facebook_id_callback()
+    {
+        printf(
+            '<input type="text" id="facebook_id" name="my_option_name[facebook_id]" value="%s" />',
+            isset( $this->options['facebook_id'] ) ? esc_attr( $this->options['facebook_id']) : ''
             );
     }
 

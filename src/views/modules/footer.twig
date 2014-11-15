@@ -7,16 +7,24 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-offset-1 col-md-5 col-sm-offset-3 col-sm-9">
+				<div class="col-md-12">
 					<div class="footer__contact">
-						<img src="{{ site.theme.link }}/images/mail.png" alt="E-mail">
-						<a class="footer__item util__text-white" href="mailto:{{settings.e_mail_id}}">{{settings.e_mail_id}}</a>
-					</div>
-				</div>
-				<div class="col-md-6 col-md-offset-0 col-sm-offset-3 col-sm-9">
-					<div class="footer__contact">
-						<img src="{{ site.theme.link }}/images/telephone.png" alt="Telephone">
-						<span class="footer__item util__text-white">{{settings.telefon_id}}</span>
+						<h1 class="footer__contact-name">
+							Marcin Fabijański
+						</h1>
+						<div class="footer__contact-phone">
+							<img src="{{ site.theme.link }}/images/telephone.png" alt="Telephone">
+							<span class="footer__item util__text-white">{{settings.telefon_id}}</span>
+						</div>
+						<div class="footer__contact-social">
+							<a href="{{settings.facebook_id}}" class="footer__contact-icons"><img src="{{ site.theme.link }}/images/facebook.png" alt="Facebook logo"></a>
+
+							<a href="{{settings.twitter_id}}" class="footer__contact-icons"><img src="{{ site.theme.link }}/images/twitter.png" alt="Twitter logo"></a>
+
+							<a href="skype:{{settings.skype_id}}?call" class="footer__contact-icons"><img src="{{ site.theme.link }}/images/skype.png" alt="Skype logo"></a>
+
+							<a href="mailto:{{settings.e_mail_id}}" class="footer__contact-icons"><img src="{{ site.theme.link }}/images/mail.png" alt="Mail ico"></a>
+						</div>
 					</div>
 				</div>
 			</div>
