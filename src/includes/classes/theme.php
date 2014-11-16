@@ -131,7 +131,7 @@ class Theme extends WordpressWrapper
 
 		$inspiracje->add_meta_box('plik','Plik','normal',
 			array(
-				'Typ dokumentu' => array('select', array('Tekst','Audio','Wideo')),
+				'Typ dokumentu' => array('select', array('Teksty','Audio','Wideo')),
 				)
 			);
 

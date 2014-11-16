@@ -13,7 +13,7 @@
 						<h2 class="inspiration__caption util__text-white">Teksty</h2>
 					</div>
 					{% for plik in pliki %}
-						{% if plik.meta_typ_dokumentu == "Tekst" %}
+						{% if plik.meta_typ_dokumentu == "Teksty" %}
 							<a href="{{plik.link}}" class="inspiration__link text-center">{{plik.title}}</a>
 						{% endif %}
 					{% endfor %}
@@ -41,7 +41,7 @@
 							<a href="{{plik.link}}" class="inspiration__link text-center">{{plik.title}}</a>
 						{% endif %}
 					{% endfor %}
-					
+
 				</div>
 
 			</div>
