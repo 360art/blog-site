@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" style="height: 100%">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	{{ wp_head }}
 </head>
-<body id="body">
-	<div class="single">
-
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-8 col-xs-8">
+<body id="body" style="height: 100% !important">
+	<div class="single" style="height: 100% !important">
+		<div class="container-fluid" style="height: 100% !important">
+			<div class="row" style="height: 100% !important">
+				<div class="col-md-8 col-xs-8 single__content">
 					<div class="single__head">
 						<h1 class="single__title">
 							{{post.title}}
 						</h1>
 					</div>
 					<div class="single__author">
-						<span>Barbara Psikuta 21 kwietnia 2031</span>
+						<p>Barbara Psikuta 21 kwietnia 2031</p>
 					</div>
 					<div class="single__paragraph util__text-black">
 						{{post.content}}
@@ -26,7 +25,53 @@
 				</div>
 				<div class="col-md-4 col-sm-4 hidden-xs">
 					<p class="single__previous-head">Poprzednie wpisy</p>
-					<ul class="single__previous">
+					<ul class="single__previous-list">
+						{# {% for post in aktualnosci %}
+							<li class="single__previous-item">
+								<a href="google.pl">{{post.title}}</a>
+								<p>{{post.author}} {{post.date}}</p>
+							</li>
+						{% endfor %} #}
+						<li class="single__previous-item">
+							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
+							<p>2 kwietnia 2014</p>
+						</li>
+						<li class="single__previous-item">
+							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
+							<p>2 kwietnia 2014</p>
+						</li>
+						<li class="single__previous-item">
+							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
+							<p>2 kwietnia 2014</p>
+						</li>
+						<li class="single__previous-item">
+							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
+							<p>2 kwietnia 2014</p>
+						</li>
+						<li class="single__previous-item">
+							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
+							<p>2 kwietnia 2014</p>
+						</li>
+						<li class="single__previous-item">
+							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
+							<p>2 kwietnia 2014</p>
+						</li>
+						<li class="single__previous-item">
+							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
+							<p>2 kwietnia 2014</p>
+						</li>
+						<li class="single__previous-item">
+							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
+							<p>2 kwietnia 2014</p>
+						</li>
+						<li class="single__previous-item">
+							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
+							<p>2 kwietnia 2014</p>
+						</li>
+						<li class="single__previous-item">
+							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
+							<p>2 kwietnia 2014</p>
+						</li>
 						<li class="single__previous-item">
 							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
 							<p>2 kwietnia 2014</p>

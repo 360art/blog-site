@@ -7845,19 +7845,79 @@ td.visible-print {
 }
 .single {
   background-color: #fff;
+  overflow-x: hidden;
+}
+.single__content {
+  height: 100%;
+  background-color: #f5f5f5;
+}
+.single__head {
+  height: 100px;
+  background-image: url(http://lorempixel.com/800/100);
+  margin-right: -15px;
+}
+.single__author {
+  color: #bd3636;
+  font-size: 17px;
+  background-color: #f5f5f5;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .single__title {
   display: block;
   width: 100%;
-  height: 100px;
-  background-image: url(http://lorempixel.com/600/100);
-  color: #bd3636;
+  color: #fff;
   font-weight: 700;
   font-size: 40px;
+  margin: 0;
+  margin-left: 20px;
+  line-height: 100px;
 }
 .single__paragraph {
   font-family: 'Vesper Libre', serif;
   font-size: 16px;
+  background-color: #f5f5f5;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.single__paragraph:first-letter {
+  font-size: 56px;
+  float: left;
+  color: #bd3636;
+  line-height: 56px;
+  padding-right: 8px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+.single__previous-head {
+  font-family: 'Vesper Libre', serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.single__previous-list {
+  list-style: none;
+  padding-left: 0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+.single__previous-item {
+  margin-top: 20px;
+  padding-right: 30px;
+}
+.single__previous-item a {
+  font-size: 20px;
+  font-weight: 300;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+}
+.single__previous-item p {
+  text-align: right;
+  color: #bd3636;
+  text-transform: none;
+  font-variant: normal;
+  margin-top: 5px;
 }
 .single__inline-block {
   display: inline-block;
