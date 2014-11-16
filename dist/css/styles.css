@@ -7910,6 +7910,9 @@ td.visible-print {
   font-family: 'Alegreya Sans SC', sans-serif;
   padding: 18px 0;
 }
+.single__previous-item {
+  margin-bottom: 20px;
+}
 .single__previous-item a {
   font-size: 20px;
   font-weight: 300;
