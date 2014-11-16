@@ -1,101 +1,35 @@
 <!DOCTYPE html>
-<html lang="pl" style="height: 100%">
+<html lang="pl" style="height: 100%;">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	{{ wp_head }}
 </head>
-<body id="body" style="height: 100% !important">
-	<div class="single" style="height: 100% !important">
-		<div class="single__container" style="height: 100% !important">
-			<div class="single__row" style="height: 100% !important">
-				<div class="single__70 single__content">
-					<div class="single__head">
-						<h1 class="single__title">
-							{{post.title}}
-						</h1>
-					</div>
-					<div class="single__author">
-						<p>{{post.author}} {{post.date}}</p>
-					</div>
-					<div class="single__paragraph util__text-black">
-						{{post.post_excerpt}} {{post.content}}
-					</div>
-				</div>
-				<div class="single__30">
-					<p class="single__previous-head">Poprzednie wpisy</p>
-					<ul class="single__previous-list">
-						{# {% for post in aktualnosci %}
-							<li class="single__previous-item">
-								<a href="google.pl">{{post.title}}</a>
-								<p>{{post.author}} {{post.date}}</p>
-							</li>
-						{% endfor %} #}
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-						<li class="single__previous-item">
-							<a href="google.pl">Lorem ipsum dolor sit amet.</a>
-							<p>2 kwietnia 2014</p>
-						</li>
-					</ul>
-
-				</div>
+<body id="body" style="height: 100%;">
+	<div class="single">
+		<div class="single__content">
+			<div class="single__head">
+				<span class="single__title">
+					{{post.title}}
+				</span>
 			</div>
+			<div class="single__paragraph util__text-black">
+				<div class="single__author">{{post.author}} {{post.date}}</div>
+				<div class="single__txt">{{post.post_excerpt}} {{post.content}}</div>
+			</div>
+		</div>
+		<div class="single__sidebar">
+			<span class="single__previous-head">Poprzednie wpisy</span>
+			<ul class="single__previous-list list-unstyled">
+				{% for post in aktualnosci %}
+					<li class="single__previous-item">
+						<a href="{{post.link}}">{{post.title}}</a>
+						<p>{{post.author}} {{post.date}}</p>
+					</li>
+				{% endfor %}
+			</ul>
+
 		</div>
 		{# <img src="{{post.thumbnail.src('medium')}}" alt="{{post.title}}" class="single__inline-block"> #}
 	</div>
