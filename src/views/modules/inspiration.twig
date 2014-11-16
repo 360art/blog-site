@@ -14,7 +14,7 @@
 					</div>
 					{% for plik in pliki %}
 						{% if plik.meta_typ_dokumentu == "Tekst" %}
-							<a href="{{plik.meta_uploader}}" class="inspiration__link text-center">{{plik.meta_opis}}</a>
+							<a href="{{plik.link}}" class="inspiration__link text-center">{{plik.title}}</a>
 						{% endif %}
 					{% endfor %}
 				</div>
@@ -25,7 +25,7 @@
 					</div>
 					{% for plik in pliki %}
 						{% if plik.meta_typ_dokumentu == "Wideo" %}
-							<a href="{{plik.meta_uploader}}" class="inspiration__link text-center">{{plik.meta_opis}}</a>
+							<a href="{{plik.link}}" class="inspiration__link text-center">{{plik.title}}</a>
 						{% endif %}
 					{% endfor %}
 
@@ -38,7 +38,7 @@
 					</div>
 					{% for plik in pliki %}
 						{% if plik.meta_typ_dokumentu == "Audio" %}
-							<a href="{{plik.meta_uploader}}" class="inspiration__link text-center">{{plik.meta_opis}}</a>
+							<a href="{{plik.link}}" class="inspiration__link text-center">{{plik.title}}</a>
 						{% endif %}
 					{% endfor %}
 					
