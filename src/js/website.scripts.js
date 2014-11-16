@@ -8,26 +8,34 @@
 		slidesToShow: 3,
 		arrows: true,
 		onInit: function() {
-			$('.slick-active').eq(1).css('color', 'white')
-			.siblings().css('color', 'gray');
 
-			var full_text = $('.slick-active').eq(1).data('full');
-			var excerpt = $('.slick-active').eq(1).data('excerpt');
-			$('.slick-active').eq(1).empty().append('<span>'+full_text+'</span>')
-			.siblings().css('color', 'gray');
+			var current = $('.slick-active').eq(1);
+			var full = current.data('full');
+
+			current
+				.empty()
+				.append('<span>' + full + '</span>')
+				.css('color', 'white')
+				.siblings()
+				.css('color', 'gray');
+
 		},
-		onBeforeChange: function(current, target) {
-			var full_text = $('.slick-active').eq(2).data('full');
-			var active = $('.slick-slide').not(':eq(' + target + ')');
+		onAfterChange: function() {
 
-			//Zamien wszystkie pozostałe tresci na excerpt
-			active.each(function(){
-				var item_excerpt = $(this).data('excerpt');
-				$(this).empty().append('<span>'+item_excerpt+'</span>');
-			});
+			var current = $('.slick-active').eq(1);
+			var siblings = $('.slick-slide').not(current);
+			var full = current.data('full');
 
-			$('.slick-active').eq(2).empty().append('<span>'+full_text+'</span>').css('color','white')
-			.siblings().css('color', 'gray');
+			siblings.each(function () {
+				$(this)
+					.empty()
+					.append('<span>' + $(this).data('excerpt') + '</span>')
+					.css('color', 'gray');
+			})
+
+			current.empty()
+				.append('<span>' + full + '</span>')
+				.css('color','white');
 		}
 	});
 	//EOF Filtr urojen slider
