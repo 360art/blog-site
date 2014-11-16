@@ -14,7 +14,6 @@ $theme->view('index', array(
 	)),
 	'aktualnosci' => Timber::get_posts(array(
 		'post_type'=>'aktualnosci',
-		'limit' => '3',
 		'orderby' => 'date',
 		'order' => 'DESC'
 	)),

@@ -7868,8 +7868,8 @@ td.visible-print {
   overflow-x: hidden;
 }
 .single__head {
-  height: 100px;
-  background-image: url(http://lorempixel.com/800/100);
+  background-size: cover;
+  background-position: center center;
 }
 .single__author {
   color: #bd3636;

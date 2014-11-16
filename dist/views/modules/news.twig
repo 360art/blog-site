@@ -8,7 +8,7 @@
 			</div>
 		</div>
 		<div class="row">
-			{% for post in aktualnosci %}
+			{% for post in aktualnosci | slice(0,3) %}
 			<div class="col-md-4 col-sm-6">
 				<img src="{{post.thumbnail}}" class="news__img img-responsive" alt="Lorem">
 				<h2 class="news__title">{{post.title}}</h2>
