@@ -16,9 +16,9 @@
 			$('.slick-active').eq(1).empty().append('<span>'+full_text+'</span>')
 			.siblings().css('color', 'gray');
 		},
-		onAfterChange: function() {
-			var full_text = $('.slick-active').eq(1).data('full');
-			var active = $('.slick-active').not(':eq(1)');
+		onBeforeChange: function(current, target) {
+			var full_text = $('.slick-active').eq(2).data('full');
+			var active = $('.slick-slide').not(':eq(' + target + ')');
 
 			//Zamien wszystkie pozostałe tresci na excerpt
 			active.each(function(){
@@ -26,7 +26,7 @@
 				$(this).empty().append('<span>'+item_excerpt+'</span>');
 			});
 
-			$('.slick-active').eq(1).empty().append('<span>'+full_text+'</span>').css('color','white')
+			$('.slick-active').eq(2).empty().append('<span>'+full_text+'</span>').css('color','white')
 			.siblings().css('color', 'gray');
 		}
 	});
