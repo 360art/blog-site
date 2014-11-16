@@ -15,11 +15,11 @@ $(document).ready(function() {
       && this.hash.replace(/#/,'') ) {
       var $target = $(this.hash), target = this.hash;
     if (target) {
-      var targetOffset = $target.offset().top;
+      var targetOffset = $target.offset().top - $('#nav').outerHeight(true);
       $(this).click(function(event) {
         event.preventDefault();
         $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
-          location.hash = target;
+          // location.hash = target;
         });
       });
     }
