@@ -16,6 +16,8 @@
 		height: 100%;
 		float: right;
 		padding: 27px;
+		padding-right: 0;
+		padding-top: 0;
 		//overflow-y: scroll;
 		overflow-x: hidden;
 	}
@@ -58,6 +60,7 @@
 	}
 
 	&__txt {
+		padding-right: 16px;
 		&:first-letter {
 			font-size: 60px;
 			float: left;
@@ -74,11 +77,13 @@
 		font-size: 12px;
 		letter-spacing: 2px;
 		text-transform: uppercase;
+		margin-top: 27px;
 	}
 
 	&__previous-list {
 		font-family: @font-family-sans-serif;
 		padding: 18px 0;
+		padding-right: 45px;
 	}
 
 	&__previous-item {
@@ -104,4 +109,12 @@
 	&__inline-block {
 		display: inline-block;
 	}
+}
+
+div#mCSB_1_scrollbar_vertical {
+	margin-right: 13px;
+}
+
+div#mCSB_2_scrollbar_vertical {
+	margin-right: 13px;
 }

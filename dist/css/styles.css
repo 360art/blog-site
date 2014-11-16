@@ -7856,6 +7856,8 @@ td.visible-print {
   height: 100%;
   float: right;
   padding: 27px;
+  padding-right: 0;
+  padding-top: 0;
   overflow-x: hidden;
 }
 .single__content {
@@ -7889,6 +7891,9 @@ td.visible-print {
   background-color: #f5f5f5;
   padding: 24px;
 }
+.single__txt {
+  padding-right: 16px;
+}
 .single__txt:first-letter {
   font-size: 60px;
   float: left;
@@ -7903,10 +7908,12 @@ td.visible-print {
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin-top: 27px;
 }
 .single__previous-list {
   font-family: 'Alegreya Sans SC', sans-serif;
   padding: 18px 0;
+  padding-right: 45px;
 }
 .single__previous-item {
   margin-bottom: 20px;
@@ -7926,6 +7933,12 @@ td.visible-print {
 }
 .single__inline-block {
   display: inline-block;
+}
+div#mCSB_1_scrollbar_vertical {
+  margin-right: 13px;
+}
+div#mCSB_2_scrollbar_vertical {
+  margin-right: 13px;
 }
 .about {
   background-color: #5d6d6c;
@@ -8872,9 +8885,6 @@ CONTENTS:
 y-axis
 ------------------------------------------------------------------------------------------------------------------------
 */
-.mCSB_inside > .mCSB_container {
-  margin-right: 30px;
-}
 .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
   margin-right: 0;
 }

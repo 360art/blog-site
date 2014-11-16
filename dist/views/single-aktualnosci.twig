@@ -16,11 +16,12 @@
 			</div>
 			<div class="single__paragraph util__text-black">
 				<div class="single__author">{{post.author}} {{post.date}}</div>
-				<div class="single__txt">{{post.post_excerpt}} {{post.content}}</div>
+				<div class="single__txt">{{post.post_excerpt}} {{post.content}}
+				</div>
 			</div>
 		</div>
 		<div class="single__sidebar">
-			<span class="single__previous-head">Poprzednie wpisy</span>
+			<div class="single__previous-head">Poprzednie wpisy</div>
 			<ul class="single__previous-list list-unstyled">
 				{% for post in aktualnosci %}
 					<li class="single__previous-item">
@@ -38,6 +39,9 @@
 <script type="text/javascript">
 //Custom scrollbar
 	$(".single__content").mCustomScrollbar({
+		theme: 'dark'
+	});
+	$(".single__sidebar").mCustomScrollbar({
 		theme: 'dark'
 	});
 </script>
