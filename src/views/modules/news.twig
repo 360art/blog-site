@@ -10,7 +10,7 @@
 		<div class="row">
 			{% for post in aktualnosci | slice(0,3) %}
 			<div class="col-md-4 col-sm-6">
-				<img src="{{post.thumbnail}}" class="news__img img-responsive" alt="Lorem">
+				<img src="{{post.thumbnail.src|resize(300, 200)}}" class="news__img img-responsive" alt="Lorem">
 				<h2 class="news__title">{{post.title}}</h2>
 				<h3 class="news__author-date">{{post.author}} {{post.date}}</h3>
 				<p class="util__paragraph util__text-black">
