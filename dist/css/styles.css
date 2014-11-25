@@ -8104,6 +8104,17 @@ div#mCSB_2_scrollbar_vertical {
 .program__download-all:hover {
   background-position: 0px -84px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .program__download-all {
+    width: 220px;
+    height: 56px;
+    background-image: url(../images/down_all.png);
+    background-size: 90%;
+  }
+  .program__download-all:hover {
+    background-position: 0px -56px;
+  }
+}
 @media (max-width: 991px) {
   .program__download-all {
     margin: 0 auto;
@@ -8132,9 +8143,6 @@ div#mCSB_2_scrollbar_vertical {
 }
 .inspiration__icon img {
   margin-left: 65px;
-}
-.inspiration__icon-last img {
-  margin-left: 89px;
 }
 .inspiration__link {
   font-size: 20px;
