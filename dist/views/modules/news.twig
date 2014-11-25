@@ -9,15 +9,17 @@
 		</div>
 		<div class="row">
 			{% for post in aktualnosci | slice(0,3) %}
-			<div class="col-md-4 col-sm-6">
-				<img src="{{post.thumbnail.src|resize(300, 200)}}" class="news__img img-responsive" alt="Lorem">
-				<h2 class="news__title">{{post.title}}</h2>
-				<h3 class="news__author-date">{{post.author}} {{post.date}}</h3>
-				<p class="util__paragraph util__text-black">
-					{{post.post_excerpt}}
-				</p>
-				<div class="news__more-wrap">
-					<a class="news__more" href="{{post.link}}">Czytaj Dalej</a>
+			<div class="news__single">
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<img src="{{post.thumbnail.src|resize(300, 200)}}" class="news__img img-responsive" alt="Lorem">
+					<h2 class="news__title">{{post.title}}</h2>
+					<h3 class="news__author-date">{{post.author}} {{post.date}}</h3>
+					<p class="util__paragraph util__text-black">
+						{{post.post_excerpt}}
+					</p>
+					<div class="news__more-wrap">
+						<a class="news__more" href="{{post.link}}">Czytaj Dalej</a>
+					</div>
 				</div>
 			</div>
 			{% endfor %}

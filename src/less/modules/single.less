@@ -50,6 +50,9 @@
 		font-weight: 700;
 		font-size: 40px;
 		padding: 24px 27px;
+		@media (max-width: @screen-sm-min) {
+			font-size: 24px;
+		}
 	}
 
 	&__paragraph {
@@ -62,6 +65,7 @@
 	&__txt {
 		padding-right: 16px;
 		&:first-letter {
+			font-family: @font-family-sans-serif;
 			font-size: 60px;
 			float: left;
 			color: #bd3636;
@@ -95,6 +99,9 @@
 			font-variant: small-caps;
 			letter-spacing: 2px;
 			line-height: 1;
+			@media (max-width: @screen-sm-min) {
+				font-size: 16px;
+			}
 		}
 
 		p {
@@ -102,6 +109,9 @@
 			color: #bd3636;
 			text-transform: none;
 			font-variant: normal;
+			@media (max-width: @screen-sm-min) {
+				display: none;
+			}
 		}
 
 	}

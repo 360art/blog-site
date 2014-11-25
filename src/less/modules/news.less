@@ -2,6 +2,13 @@
 	h1,h2,h3 {
 		margin: 0;
 	}
+	&__single {
+		@media (max-width: @screen-md-max) {
+			&:last-of-type {
+				display: none;
+			}
+		}
+	}
 	&__img {
 		margin: 0 auto;
 		padding-bottom: 24px;
