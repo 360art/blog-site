@@ -22,10 +22,10 @@ class MySettingsPage
     {
         // This page will be under "Settings"
         add_options_page(
-            'Settings Admin', 
-            'Ustawienia strony', 
-            'manage_options', 
-            'my-setting-admin', 
+            'Settings Admin',
+            'Ustawienia strony',
+            'manage_options',
+            'my-setting-admin',
             array( $this, 'create_admin_page' )
             );
     }
@@ -40,13 +40,13 @@ class MySettingsPage
         ?>
         <div class="wrap">
             <?php screen_icon(); ?>
-            <h2>Ustawienia strony</h2>           
+            <h2>Ustawienia strony</h2>
             <form method="post" action="options.php">
                 <?php
                 // This prints out all hidden setting fields
-                settings_fields( 'my_option_group' );   
+                settings_fields( 'my_option_group' );
                 do_settings_sections( 'my-setting-admin' );
-                submit_button(); 
+                submit_button();
                 ?>
             </form>
         </div>
@@ -57,7 +57,7 @@ class MySettingsPage
      * Register and add settings
      */
     public function page_init()
-    {        
+    {
         register_setting(
             'my_option_group', // Option group
             'my_option_name', // Option name
@@ -74,60 +74,60 @@ class MySettingsPage
 
         add_settings_field(
             'e_mail_id', // ID
-            'E-mail', // Title 
+            'E-mail', // Title
             array( $this, 'e_mail_id_callback' ), // Callback
             'my-setting-admin', // Page
-            'setting_section_id' // Section           
+            'setting_section_id' // Section
             );
 
         add_settings_field(
             'twitter_id', // ID
-            'Twitter', // Title 
+            'Twitter', // Title
             array( $this, 'twitter_id_callback' ), // Callback
             'my-setting-admin', // Page
-            'setting_section_id' // Section           
-            ); 
+            'setting_section_id' // Section
+            );
 
         add_settings_field(
             'skype_id', // ID
-            'Skype', // Title 
+            'Skype', // Title
             array( $this, 'skype_id_callback' ), // Callback
             'my-setting-admin', // Page
-            'setting_section_id' // Section           
-            );  
+            'setting_section_id' // Section
+            );
 
         add_settings_field(
             'facebook_id', // ID
-            'Facebook', // Title 
+            'Facebook', // Title
             array( $this, 'facebook_id_callback' ), // Callback
             'my-setting-admin', // Page
-            'setting_section_id' // Section           
-            ); 
+            'setting_section_id' // Section
+            );
 
         add_settings_field(
-            'telefon_id', 
-            'Telefon', 
-            array( $this, 'telephone_callback' ), 
-            'my-setting-admin', 
+            'telefon_id',
+            'Telefon',
+            array( $this, 'telephone_callback' ),
+            'my-setting-admin',
             'setting_section_id'
             );
 
 ////////
-        add_settings_section(
-            'buttons_id', // ID
-            'Przyciski', // Title
-            array( $this, 'print_section_info' ), // Callback
-            'my-setting-admin' // Page
-            );   
+        // add_settings_section(
+        //     'buttons_id', // ID
+        //     'Przyciski', // Title
+        //     array( $this, 'print_section_info' ), // Callback
+        //     'my-setting-admin' // Page
+        //     );
 
-        add_settings_field(
-            'down_link_id', // ID
-            'Link do "Pobierz wszystko"', // Title 
-            array( $this, 'down_link_id_callback' ), // Callback
-            'my-setting-admin', // Page
-            'buttons_id' // Section           
-            );
-//////// 
+        // add_settings_field(
+        //     'down_link_id', // ID
+        //     'Link do "Pobierz wszystko"', // Title
+        //     array( $this, 'down_link_id_callback' ), // Callback
+        //     'my-setting-admin', // Page
+        //     'buttons_id' // Section
+        //     );
+////////
     }
 
     /**
@@ -153,13 +153,13 @@ class MySettingsPage
         if( isset( $input['facebook_id'] ) )
             $new_input['facebook_id'] = sanitize_text_field( $input['facebook_id'] );
 
-        if( isset( $input['down_link_id'] ) )
-            $new_input['down_link_id'] = sanitize_text_field( $input['down_link_id'] );
+        // if( isset( $input['down_link_id'] ) )
+        //     $new_input['down_link_id'] = sanitize_text_field( $input['down_link_id'] );
 
         return $new_input;
     }
 
-    /** 
+    /**
      * Print the Section text
      */
     public function print_section_info()
@@ -167,7 +167,7 @@ class MySettingsPage
         //print 'Wprowadź swoje ustawienia:';
     }
 
-    /** 
+    /**
      * Get the settings option array and print one of its values
      */
     public function e_mail_id_callback()
@@ -178,7 +178,7 @@ class MySettingsPage
             );
     }
 
-     /** 
+     /**
      * Get the settings option array and print one of its values
      */
     public function twitter_id_callback()
@@ -189,7 +189,7 @@ class MySettingsPage
             );
     }
 
-     /** 
+     /**
      * Get the settings option array and print one of its values
      */
     public function skype_id_callback()
@@ -200,7 +200,7 @@ class MySettingsPage
             );
     }
 
-     /** 
+     /**
      * Get the settings option array and print one of its values
      */
     public function facebook_id_callback()
@@ -211,7 +211,7 @@ class MySettingsPage
             );
     }
 
-    /** 
+    /**
      * Get the settings option array and print one of its values
      */
     public function telephone_callback()
@@ -222,16 +222,16 @@ class MySettingsPage
             );
     }
 
-    /** 
+    /**
      * Get the settings option array and print one of its values
      */
-    public function down_link_id_callback()
-    {
-        printf(
-            '<input type="text" id="down_link_id" name="my_option_name[down_link_id]" value="%s" />',
-            isset( $this->options['down_link_id'] ) ? esc_attr( $this->options['down_link_id']) : ''
-            );
-    }
+    // public function down_link_id_callback()
+    // {
+    //     printf(
+    //         '<input type="text" id="down_link_id" name="my_option_name[down_link_id]" value="%s" />',
+    //         isset( $this->options['down_link_id'] ) ? esc_attr( $this->options['down_link_id']) : ''
+    //         );
+    // }
 }
 
 if( is_admin() )

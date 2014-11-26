@@ -7821,6 +7821,7 @@ td.visible-print {
   }
 }
 .news__img {
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 24px;
 }

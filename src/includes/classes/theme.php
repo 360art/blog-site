@@ -48,6 +48,11 @@ class Theme extends WordpressWrapper
 		$this->collection = Timber::get_context();
 		$this->collection['pagination'] = Timber::get_pagination();
 
+		$this->collection['pages'] = array(
+			'about' => new TimberPost(2),
+			'program' => new TimberPost(40)
+		);
+
 		// Add to collection passed data
 		foreach ($data as $key => $value) {
 			$this->collection[$key] = $value;

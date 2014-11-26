@@ -3,47 +3,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
-						<h1 class="util__headline-1 util__headline-white">o szkole</h1>
+					<h1 class="util__headline-1 util__headline-white">{{ pages.about.title }}</h1>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-8 col-sm-8">
-					<p class="util__paragraph util__text-white">
-						Dostrojenie do procesu życia to metoda praktyki filozoficznej na całe życie. Stworzyłem ją z tego co najlepsze w filozofii Wschodu i Zachodu. Jej główne założenie, które podzielali stoicy, Epikur, Budda i Laozi opiera się na tym, że szczęście i spokój możemy budować tylko na zrozumieniu tego jak działa proces życia i działaniu w zgodzie z nim. Nie osiągniemy ich za pomocą budowania i fortyfikowania silnego ego, które przeciwstawia się procesowi życia. Zwykle zapisujemy się na szkolenia lub studia bo chcemy zostać ekspertami. W tej szkole stajemy się wiecznymi uczniami studiującymi życie. Każdy buduje swój własny styl uprawiania sztuki życia.t
-					</p>
-					<div class="row">
-						<div class="col-md-6 col-sm-6">
-							<h2 class="util__headline-2 util__text-white">Typowe studia podyplomowe lub coachingowe:</h2>
-							<ol class="util__paragraph util__text-white">
-								<li>Od 180 godzin stacjonarnych wykładów i dyskusji ( każdy przechodzi identyczny program)</li>
-								<li>Co najmniej dwa semestry – rok nauki</li>
-								<li>Nawet 80 studentów w grupie</li>
-								<li>Zostajesz ekspertem w wąskim wycinku wiedzy</li>
-							</ol>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<h2 class="util__headline-2 util__text-white">Szkoła filozofii Dostrojenia do Procesu Życia</h2>
-							<ol class="util__paragraph util__text-white">
-								<li>150 godzin spersonalizowanego programu w stałym kontakcie z nauczycielem 
-</li>
-								<li>Trzymiesięczny program wiosną lub jesienią oraz co najmniej tygodniowy intensywny trening wyjazdowy</li>
-								<li>Najwyżej 12 studentów</li>
-								<li>Umiesz świadomie budować własną filozofię życia</li>
-								<li>Po zakończeniu możliwość uczestniczenia w programie Asystent Świadomego Życia</li>
-							</ol>
-						</div>
-					</div>
-				</div>	
-				<div class="col-md-3 col-md-offset-1 col-sm-4">
-					<div class="about__photo hidden-xs">
-						<img src="{{ site.theme.link }}/images/foto.jpg" class="img-responsive" alt="Marcin Fabjański">
-						<div class="about__photo-caption">
-							<h3 class="about__photo-name util__text-white">dr Marcin Fabjański</h3>
-							<h4 class="about__photo-desc">Założyciel "selfoff"</h4>
-						</div>
-					</div>
-				</div>
-			</div>
+				{{ pages.about.content }}
 		</div>
 	</div>
 </div>
