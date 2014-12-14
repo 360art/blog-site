@@ -17,6 +17,11 @@ $theme->view('index', array(
 		'orderby' => 'date',
 		'order' => 'DESC'
 	)),
+	'o_mnie' => Timber::get_posts(array(
+		'post_type'=>'o_mnie',
+		'orderby' => 'date',
+		'order' => 'DESC'
+	)),
 	'opinie' => Timber::get_posts(array(
 		'post_type'=>'opinie',
 		'limit' => '5',

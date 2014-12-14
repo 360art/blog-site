@@ -112,6 +112,23 @@ class MySettingsPage
             'setting_section_id'
             );
 
+        //Popup o mnie
+
+        // add_settings_section(
+        //     'o_mnie_section_id', // ID
+        //     'Popup O mnie', // Title
+        //     array( $this, 'print_section_info' ), // Callback
+        //     'my-setting-admin' // Page
+        //     );
+
+        // add_settings_field(
+        //     'o_mnie_id',
+        //     'O mnie treść',
+        //     array( $this, 'o_mnie_callback' ),
+        //     'my-setting-admin',
+        //     'o_mnie_section_id'
+        //     );
+
 ////////
         // add_settings_section(
         //     'buttons_id', // ID
@@ -221,6 +238,17 @@ class MySettingsPage
             isset( $this->options['telefon_id'] ) ? esc_attr( $this->options['telefon_id']) : ''
             );
     }
+
+    /**
+     * Get the settings option array and print one of its values
+     */
+    // public function o_mnie_callback()
+    // {
+    //     printf(
+    //         '<input type="text" id="o_mnie_id" name="my_option_name[o_mnie_id]" value="%s" />',
+    //         isset( $this->options['o_mnie_id'] ) ? esc_attr( $this->options['o_mnie_id']) : ''
+    //         );
+    // }
 
     /**
      * Get the settings option array and print one of its values
