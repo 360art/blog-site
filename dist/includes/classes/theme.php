@@ -93,11 +93,6 @@ class Theme extends WordpressWrapper
 				'dependences' => array('jquery'),
 				'footer' => true
 				),
-			'magnificpopup' => array(
-				'path' => 'js/vendor/magnific.js',
-				'dependences' => array('jquery'),
-				'footer' => true
-				),
 			'scripts' => array(
 				'path' => 'js/scripts.min.js',
 				'dependences' => array('jquery', 'modernizr', 'bootstrap'),
@@ -140,8 +135,6 @@ class Theme extends WordpressWrapper
 				)
 			);
 
-		$omnie = new JW_Post_Type('omnie',array('O mnie','O mnie'),
-			array('supports' => array('title', 'editor', 'thumbnail')));
 	}
 
 
