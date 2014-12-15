@@ -112,38 +112,6 @@ class MySettingsPage
             'setting_section_id'
             );
 
-        //Popup o mnie
-
-        // add_settings_section(
-        //     'o_mnie_section_id', // ID
-        //     'Popup O mnie', // Title
-        //     array( $this, 'print_section_info' ), // Callback
-        //     'my-setting-admin' // Page
-        //     );
-
-        // add_settings_field(
-        //     'o_mnie_id',
-        //     'O mnie treść',
-        //     array( $this, 'o_mnie_callback' ),
-        //     'my-setting-admin',
-        //     'o_mnie_section_id'
-        //     );
-
-////////
-        // add_settings_section(
-        //     'buttons_id', // ID
-        //     'Przyciski', // Title
-        //     array( $this, 'print_section_info' ), // Callback
-        //     'my-setting-admin' // Page
-        //     );
-
-        // add_settings_field(
-        //     'down_link_id', // ID
-        //     'Link do "Pobierz wszystko"', // Title
-        //     array( $this, 'down_link_id_callback' ), // Callback
-        //     'my-setting-admin', // Page
-        //     'buttons_id' // Section
-        //     );
 ////////
     }
 

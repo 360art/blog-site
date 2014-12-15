@@ -10,9 +10,9 @@
 
 $post = new TimberPost();
 
-$theme->view('single-o_mnie', array(
+$theme->view('single-omnie', array(
 	'post' => $post,
-	'o_mnie' => Timber::get_posts(array(
-		'post_type' => 'o_mnie',
+	'omnie' => Timber::get_posts(array(
+		'post_type' => 'omnie',
 	)),
 ));

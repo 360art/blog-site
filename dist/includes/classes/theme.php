@@ -140,7 +140,7 @@ class Theme extends WordpressWrapper
 				)
 			);
 
-		$o_mnie = new JW_Post_Type('o_mnie',array('O mnie','O mnie'),
+		$omnie = new JW_Post_Type('omnie',array('O mnie','O mnie'),
 			array('supports' => array('title', 'editor', 'thumbnail')));
 	}
 

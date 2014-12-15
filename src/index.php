@@ -17,8 +17,8 @@ $theme->view('index', array(
 		'orderby' => 'date',
 		'order' => 'DESC'
 	)),
-	'o_mnie' => Timber::get_posts(array(
-		'post_type'=>'o_mnie',
+	'omnie' => Timber::get_posts(array(
+		'post_type'=>'omnie',
 		'orderby' => 'date',
 		'order' => 'DESC'
 	)),
