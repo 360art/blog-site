@@ -9,7 +9,7 @@
 		arrows: true,
 		onInit: function() {
 
-			var current = $('.slick-active').eq(1);
+			var current = $('.filtr__slider .slick-active').eq(1);
 			var full = current.data('full');
 
 			current
@@ -22,8 +22,8 @@
 		},
 		onAfterChange: function() {
 
-			var current = $('.slick-active').eq(1);
-			var siblings = $('.slick-slide').not(current);
+			var current = $('.filtr__slider .slick-active').eq(1);
+			var siblings = $('.filtr__slider .slick-slide').not(current);
 			var full = current.data('full');
 
 			siblings.each(function () {
@@ -79,7 +79,7 @@
 		</button>'
 	});
 
-	
+
 	//Sticky menu
 	 $(".nav__menu").scrollFix();
 })();
